@@ -22,7 +22,7 @@ function displayProduct(data) {
     let div = document.createElement("div");
     div.addEventListener("click", function () {
       data1 = el.id;
-      window.open("", "_self");
+      window.open("categories_Product.html", "_self");
       localStorage.setItem("currentProduct", data1);
     });
     div.id = "product_div";
