@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="Admin.css">
+</head>
+
+<body>
+    <div id="admin_banner">
+        <img src="Admin images/indian-condiments-with-copy-space-view.jpg" alt="">
+        <div id="black_overlay_admin_banner"></div>
+        <div>
+            <div>
+                <div id="">
+                    <img src="Admin images/profile_icon_2.svg" alt="">
+                    <span id="admin_name">The Admin</span>
+                </div>
+                <div id="admin_page_options">
+                    <a href="">Orders</a>
+                    <a href="">Users</a>
+                    <a href="">Products</a>
+                    <a href="">Add Product</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="admin_main_body" style="display: none;">
+        <div id="admin_orders_sec_head">
+            All Orders
+        </div>
+        <div id="ordertable">
+            <div id="order_list_heading">
+                <span>Order ID</span>
+                <span>Customer ID</span>
+                <span>No. of Products</span>
+                <span>Phone</span>
+                <span>Action</span>
+            </div>
+            <div id="all_orders_list">
+                <div class="one_order_list_card">
+                    <div class="order_short_info">
+                        <span>
+                            <svg>
+                                <path
+                                    d="M10.5657 7.43431C10.2533 7.12189 9.74673 7.12189 9.43431 7.43431C9.1219 7.74673 9.1219 8.25327 9.43431 8.56569L10.5657 7.43431ZM14 12L14.5657 12.5657C14.8781 12.2533 14.8781 11.7467 14.5657 11.4343L14 12ZM9.43431 15.4343C9.12189 15.7467 9.12189 16.2533 9.43431 16.5657C9.74673 16.8781 10.2533 16.8781 10.5657 16.5657L9.43431 15.4343ZM9.43431 8.56569L13.4343 12.5657L14.5657 11.4343L10.5657 7.43431L9.43431 8.56569ZM13.4343 11.4343L9.43431 15.4343L10.5657 16.5657L14.5657 12.5657L13.4343 11.4343Z">
+                                </path>
+                            </svg>
+                            <span>1</span>
+                        </span>
+                        <span>15</span>
+                        <span>8</span>
+                        <span>9875412635</span>
+                        <span>Confirm</span>
+                    </div>
+                    <div class="order_detailed_info">
+                        <div class="all_ordered_item_name_list">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Product ID</th>
+                                        <th>Product Name</th>
+                                        <th>Quantity</th>
+                                        <th>Pricing</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Chicken Curry Cut</td>
+                                        <td>4</td>
+                                        <td>₹2154</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Chicken Leg Biryani Cut</td>
+                                        <td>8</td>
+                                        <td>₹3172</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>Chicken Breast Boneless</td>
+                                        <td>2</td>
+                                        <td>₹1504</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="3">Total Amount</th>
+                                        <th>₹6830</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_order_list_card">
+                    <div class="order_short_info">
+                        <span>
+                            <svg>
+                                <path
+                                    d="M10.5657 7.43431C10.2533 7.12189 9.74673 7.12189 9.43431 7.43431C9.1219 7.74673 9.1219 8.25327 9.43431 8.56569L10.5657 7.43431ZM14 12L14.5657 12.5657C14.8781 12.2533 14.8781 11.7467 14.5657 11.4343L14 12ZM9.43431 15.4343C9.12189 15.7467 9.12189 16.2533 9.43431 16.5657C9.74673 16.8781 10.2533 16.8781 10.5657 16.5657L9.43431 15.4343ZM9.43431 8.56569L13.4343 12.5657L14.5657 11.4343L10.5657 7.43431L9.43431 8.56569ZM13.4343 11.4343L9.43431 15.4343L10.5657 16.5657L14.5657 12.5657L13.4343 11.4343Z">
+                                </path>
+                            </svg>
+                            <span>1</span>
+                        </span>
+                        <span>15</span>
+                        <span>8</span>
+                        <span>9875412635</span>
+                        <span>Confirm</span>
+                    </div>
+                    <div class="order_detailed_info">
+                        <div class="all_ordered_item_name_list">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Product ID</th>
+                                        <th>Product Name</th>
+                                        <th>Quantity</th>
+                                        <th>Pricing</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Chicken Curry Cut</td>
+                                        <td>4</td>
+                                        <td>₹2154</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Chicken Leg Biryani Cut</td>
+                                        <td>8</td>
+                                        <td>₹3172</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>Chicken Breast Boneless</td>
+                                        <td>2</td>
+                                        <td>₹1504</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="3">Total Amount</th>
+                                        <th>₹6830</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_order_list_card">
+                    <div class="order_short_info">
+                        <span>
+                            <svg>
+                                <path
+                                    d="M10.5657 7.43431C10.2533 7.12189 9.74673 7.12189 9.43431 7.43431C9.1219 7.74673 9.1219 8.25327 9.43431 8.56569L10.5657 7.43431ZM14 12L14.5657 12.5657C14.8781 12.2533 14.8781 11.7467 14.5657 11.4343L14 12ZM9.43431 15.4343C9.12189 15.7467 9.12189 16.2533 9.43431 16.5657C9.74673 16.8781 10.2533 16.8781 10.5657 16.5657L9.43431 15.4343ZM9.43431 8.56569L13.4343 12.5657L14.5657 11.4343L10.5657 7.43431L9.43431 8.56569ZM13.4343 11.4343L9.43431 15.4343L10.5657 16.5657L14.5657 12.5657L13.4343 11.4343Z">
+                                </path>
+                            </svg>
+                            <span>1</span>
+                        </span>
+                        <span>15</span>
+                        <span>8</span>
+                        <span>9875412635</span>
+                        <span>Confirm</span>
+                    </div>
+                    <div class="order_detailed_info">
+                        <div class="all_ordered_item_name_list">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Product ID</th>
+                                        <th>Product Name</th>
+                                        <th>Quantity</th>
+                                        <th>Pricing</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Chicken Curry Cut</td>
+                                        <td>4</td>
+                                        <td>₹2154</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Chicken Leg Biryani Cut</td>
+                                        <td>8</td>
+                                        <td>₹3172</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>Chicken Breast Boneless</td>
+                                        <td>2</td>
+                                        <td>₹1504</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="3">Total Amount</th>
+                                        <th>₹6830</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_order_list_card">
+                    <div class="order_short_info">
+                        <span>
+                            <svg>
+                                <path
+                                    d="M10.5657 7.43431C10.2533 7.12189 9.74673 7.12189 9.43431 7.43431C9.1219 7.74673 9.1219 8.25327 9.43431 8.56569L10.5657 7.43431ZM14 12L14.5657 12.5657C14.8781 12.2533 14.8781 11.7467 14.5657 11.4343L14 12ZM9.43431 15.4343C9.12189 15.7467 9.12189 16.2533 9.43431 16.5657C9.74673 16.8781 10.2533 16.8781 10.5657 16.5657L9.43431 15.4343ZM9.43431 8.56569L13.4343 12.5657L14.5657 11.4343L10.5657 7.43431L9.43431 8.56569ZM13.4343 11.4343L9.43431 15.4343L10.5657 16.5657L14.5657 12.5657L13.4343 11.4343Z">
+                                </path>
+                            </svg>
+                            <span>1</span>
+                        </span>
+                        <span>15</span>
+                        <span>8</span>
+                        <span>9875412635</span>
+                        <span>Confirm</span>
+                    </div>
+                    <div class="order_detailed_info">
+                        <div class="all_ordered_item_name_list">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Product ID</th>
+                                        <th>Product Name</th>
+                                        <th>Quantity</th>
+                                        <th>Pricing</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Chicken Curry Cut</td>
+                                        <td>4</td>
+                                        <td>₹2154</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Chicken Leg Biryani Cut</td>
+                                        <td>8</td>
+                                        <td>₹3172</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>Chicken Breast Boneless</td>
+                                        <td>2</td>
+                                        <td>₹1504</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="3">Total Amount</th>
+                                        <th>₹6830</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="one_order_list_card">
+                    <div class="order_short_info">
+                        <span>
+                            <svg>
+                                <path
+                                    d="M10.5657 7.43431C10.2533 7.12189 9.74673 7.12189 9.43431 7.43431C9.1219 7.74673 9.1219 8.25327 9.43431 8.56569L10.5657 7.43431ZM14 12L14.5657 12.5657C14.8781 12.2533 14.8781 11.7467 14.5657 11.4343L14 12ZM9.43431 15.4343C9.12189 15.7467 9.12189 16.2533 9.43431 16.5657C9.74673 16.8781 10.2533 16.8781 10.5657 16.5657L9.43431 15.4343ZM9.43431 8.56569L13.4343 12.5657L14.5657 11.4343L10.5657 7.43431L9.43431 8.56569ZM13.4343 11.4343L9.43431 15.4343L10.5657 16.5657L14.5657 12.5657L13.4343 11.4343Z">
+                                </path>
+                            </svg>
+                            <span>1</span>
+                        </span>
+                        <span>15</span>
+                        <span>8</span>
+                        <span>9875412635</span>
+                        <span>Confirm</span>
+                    </div>
+                    <div class="order_detailed_info">
+                        <div class="all_ordered_item_name_list">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Product ID</th>
+                                        <th>Product Name</th>
+                                        <th>Quantity</th>
+                                        <th>Pricing</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Chicken Curry Cut</td>
+                                        <td>4</td>
+                                        <td>₹2154</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Chicken Leg Biryani Cut</td>
+                                        <td>8</td>
+                                        <td>₹3172</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>Chicken Breast Boneless</td>
+                                        <td>2</td>
+                                        <td>₹1504</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="3">Total Amount</th>
+                                        <th>₹6830</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_order_list_card">
+                    <div class="order_short_info">
+                        <span>
+                            <svg>
+                                <path
+                                    d="M10.5657 7.43431C10.2533 7.12189 9.74673 7.12189 9.43431 7.43431C9.1219 7.74673 9.1219 8.25327 9.43431 8.56569L10.5657 7.43431ZM14 12L14.5657 12.5657C14.8781 12.2533 14.8781 11.7467 14.5657 11.4343L14 12ZM9.43431 15.4343C9.12189 15.7467 9.12189 16.2533 9.43431 16.5657C9.74673 16.8781 10.2533 16.8781 10.5657 16.5657L9.43431 15.4343ZM9.43431 8.56569L13.4343 12.5657L14.5657 11.4343L10.5657 7.43431L9.43431 8.56569ZM13.4343 11.4343L9.43431 15.4343L10.5657 16.5657L14.5657 12.5657L13.4343 11.4343Z">
+                                </path>
+                            </svg>
+                            <span>1</span>
+                        </span>
+                        <span>15</span>
+                        <span>8</span>
+                        <span>9875412635</span>
+                        <span>Confirm</span>
+                    </div>
+                    <div class="order_detailed_info">
+                        <div class="all_ordered_item_name_list">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Product ID</th>
+                                        <th>Product Name</th>
+                                        <th>Quantity</th>
+                                        <th>Pricing</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Chicken Curry Cut</td>
+                                        <td>4</td>
+                                        <td>₹2154</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Chicken Leg Biryani Cut</td>
+                                        <td>8</td>
+                                        <td>₹3172</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>Chicken Breast Boneless</td>
+                                        <td>2</td>
+                                        <td>₹1504</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="3">Total Amount</th>
+                                        <th>₹6830</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_order_list_card">
+                    <div class="order_short_info">
+                        <span>
+                            <svg>
+                                <path
+                                    d="M10.5657 7.43431C10.2533 7.12189 9.74673 7.12189 9.43431 7.43431C9.1219 7.74673 9.1219 8.25327 9.43431 8.56569L10.5657 7.43431ZM14 12L14.5657 12.5657C14.8781 12.2533 14.8781 11.7467 14.5657 11.4343L14 12ZM9.43431 15.4343C9.12189 15.7467 9.12189 16.2533 9.43431 16.5657C9.74673 16.8781 10.2533 16.8781 10.5657 16.5657L9.43431 15.4343ZM9.43431 8.56569L13.4343 12.5657L14.5657 11.4343L10.5657 7.43431L9.43431 8.56569ZM13.4343 11.4343L9.43431 15.4343L10.5657 16.5657L14.5657 12.5657L13.4343 11.4343Z">
+                                </path>
+                            </svg>
+                            <span>1</span>
+                        </span>
+                        <span>15</span>
+                        <span>8</span>
+                        <span>9875412635</span>
+                        <span>Confirm</span>
+                    </div>
+                    <div class="order_detailed_info">
+                        <div class="all_ordered_item_name_list">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Product ID</th>
+                                        <th>Product Name</th>
+                                        <th>Quantity</th>
+                                        <th>Pricing</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Chicken Curry Cut</td>
+                                        <td>4</td>
+                                        <td>₹2154</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Chicken Leg Biryani Cut</td>
+                                        <td>8</td>
+                                        <td>₹3172</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>Chicken Breast Boneless</td>
+                                        <td>2</td>
+                                        <td>₹1504</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="3">Total Amount</th>
+                                        <th>₹6830</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 
+
+
+
+
+
+
+
+Users
+
+
+
+
+
+
+
+
+-->
+    <div id="admin_main_body" style="display: none;">
+        <div id="admin_users_sec_head">
+            All Users
+        </div>
+        <div id="usertable">
+            <div id="user_list_heading">
+                <span>User ID</span>
+                <span>Username</span>
+                <span>Phone</span>
+                <span>Address</span>
+                <span>Action</span>
+            </div>
+            <div id="all_users_list">
+                <div class="one_user_list_card">
+                    <div class="user_short_info">
+                        <span>1</span>
+                        <span>Prince</span>
+                        <span>6984512687</span>
+                        <span>Ata Pata Nai Maloom</span>
+                        <span>Delete</span>
+                    </div>
+                    <div class="user_detailed_info">
+                        <div class="all_users_name_list">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th style="text-align: center; position: relative;" rowspan="10">
+                                            <div>
+                                                <img style="margin: 20px auto;" src="Admin%20images/profile_icon_2.svg"
+                                                    alt="">
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>User ID</th>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Username</th>
+                                        <td>Prince Kumar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Address</th>
+                                        <td>Abcd, xyz 821111, Jharkhand</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Phone</th>
+                                        <td>6099488733</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="auto">Cart</th>
+                                        <td>
+                                            <span>
+                                                <table>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Chicken</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>mutton</td>
+                                                        <td>1p</td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="auto">Orders</th>
+                                        <td>
+                                            <span>
+                                                <table>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Fish</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Chicken</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_user_list_card">
+                    <div class="user_short_info">
+                        <span>1</span>
+                        <span>Prince</span>
+                        <span>6984512687</span>
+                        <span>Ata Pata Nai Maloom</span>
+                        <span>Delete</span>
+                    </div>
+                    <div class="user_detailed_info">
+                        <div class="all_users_name_list">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th style="text-align: center; position: relative;" rowspan="10">
+                                            <div>
+                                                <img style="margin: 20px auto;" src="Admin%20images/profile_icon_2.svg"
+                                                    alt="">
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>User ID</th>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Username</th>
+                                        <td>Prince Kumar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Address</th>
+                                        <td>Abcd, xyz 821111, Jharkhand</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Phone</th>
+                                        <td>6099488733</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="auto">Cart</th>
+                                        <td>
+                                            <span>
+                                                <table>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Chicken</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>mutton</td>
+                                                        <td>1p</td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="auto">Orders</th>
+                                        <td>
+                                            <span>
+                                                <table>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Fish</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Chicken</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_user_list_card">
+                    <div class="user_short_info">
+                        <span>1</span>
+                        <span>Prince</span>
+                        <span>6984512687</span>
+                        <span>Ata Pata Nai Maloom</span>
+                        <span>Delete</span>
+                    </div>
+                    <div class="user_detailed_info">
+                        <div class="all_users_name_list">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th style="text-align: center; position: relative;" rowspan="10">
+                                            <div>
+                                                <img style="margin: 20px auto;" src="Admin%20images/profile_icon_2.svg"
+                                                    alt="">
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>User ID</th>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Username</th>
+                                        <td>Prince Kumar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Address</th>
+                                        <td>Abcd, xyz 821111, Jharkhand</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Phone</th>
+                                        <td>6099488733</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="auto">Cart</th>
+                                        <td>
+                                            <span>
+                                                <table>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Chicken</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>mutton</td>
+                                                        <td>1p</td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="auto">Orders</th>
+                                        <td>
+                                            <span>
+                                                <table>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Fish</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Chicken</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_user_list_card">
+                    <div class="user_short_info">
+                        <span>1</span>
+                        <span>Prince</span>
+                        <span>6984512687</span>
+                        <span>Ata Pata Nai Maloom</span>
+                        <span>Delete</span>
+                    </div>
+                    <div class="user_detailed_info">
+                        <div class="all_users_name_list">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th style="text-align: center; position: relative;" rowspan="10">
+                                            <div>
+                                                <img style="margin: 20px auto;" src="Admin%20images/profile_icon_2.svg"
+                                                    alt="">
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>User ID</th>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Username</th>
+                                        <td>Prince Kumar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Address</th>
+                                        <td>Abcd, xyz 821111, Jharkhand</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Phone</th>
+                                        <td>6099488733</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="auto">Cart</th>
+                                        <td>
+                                            <span>
+                                                <table>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Chicken</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>mutton</td>
+                                                        <td>1p</td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="auto">Orders</th>
+                                        <td>
+                                            <span>
+                                                <table>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Fish</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Chicken</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_user_list_card">
+                    <div class="user_short_info">
+                        <span>1</span>
+                        <span>Prince</span>
+                        <span>6984512687</span>
+                        <span>Ata Pata Nai Maloom</span>
+                        <span>Delete</span>
+                    </div>
+                    <div class="user_detailed_info">
+                        <div class="all_users_name_list">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th style="text-align: center; position: relative;" rowspan="10">
+                                            <div>
+                                                <img style="margin: 20px auto;" src="Admin%20images/profile_icon_2.svg"
+                                                    alt="">
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>User ID</th>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Username</th>
+                                        <td>Prince Kumar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Address</th>
+                                        <td>Abcd, xyz 821111, Jharkhand</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Phone</th>
+                                        <td>6099488733</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="auto">Cart</th>
+                                        <td>
+                                            <span>
+                                                <table>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Chicken</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>mutton</td>
+                                                        <td>1p</td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="auto">Orders</th>
+                                        <td>
+                                            <span>
+                                                <table>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Fish</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Chicken</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_user_list_card">
+                    <div class="user_short_info">
+                        <span>1</span>
+                        <span>Prince</span>
+                        <span>6984512687</span>
+                        <span>Ata Pata Nai Maloom</span>
+                        <span>Delete</span>
+                    </div>
+                    <div class="user_detailed_info">
+                        <div class="all_users_name_list">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th style="text-align: center; position: relative;" rowspan="10">
+                                            <div>
+                                                <img style="margin: 20px auto;" src="Admin%20images/profile_icon_2.svg"
+                                                    alt="">
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>User ID</th>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Username</th>
+                                        <td>Prince Kumar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Address</th>
+                                        <td>Abcd, xyz 821111, Jharkhand</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Phone</th>
+                                        <td>6099488733</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="auto">Cart</th>
+                                        <td>
+                                            <span>
+                                                <table>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Chicken</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>mutton</td>
+                                                        <td>1p</td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="auto">Orders</th>
+                                        <td>
+                                            <span>
+                                                <table>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Fish</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Chicken</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_user_list_card">
+                    <div class="user_short_info">
+                        <span>1</span>
+                        <span>Prince</span>
+                        <span>6984512687</span>
+                        <span>Ata Pata Nai Maloom</span>
+                        <span>Delete</span>
+                    </div>
+                    <div class="user_detailed_info">
+                        <div class="all_users_name_list">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th style="text-align: center; position: relative;" rowspan="10">
+                                            <div>
+                                                <img style="margin: 20px auto;" src="Admin%20images/profile_icon_2.svg"
+                                                    alt="">
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>User ID</th>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Username</th>
+                                        <td>Prince Kumar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Address</th>
+                                        <td>Abcd, xyz 821111, Jharkhand</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Phone</th>
+                                        <td>6099488733</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="auto">Cart</th>
+                                        <td>
+                                            <span>
+                                                <table>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Chicken</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>mutton</td>
+                                                        <td>1p</td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="auto">Orders</th>
+                                        <td>
+                                            <span>
+                                                <table>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Fish</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Chicken</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_user_list_card">
+                    <div class="user_short_info">
+                        <span>1</span>
+                        <span>Prince</span>
+                        <span>6984512687</span>
+                        <span>Ata Pata Nai Maloom</span>
+                        <span>Delete</span>
+                    </div>
+                    <div class="user_detailed_info">
+                        <div class="all_users_name_list">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th style="text-align: center; position: relative;" rowspan="10">
+                                            <div>
+                                                <img style="margin: 20px auto;" src="Admin%20images/profile_icon_2.svg"
+                                                    alt="">
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>User ID</th>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Username</th>
+                                        <td>Prince Kumar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Address</th>
+                                        <td>Abcd, xyz 821111, Jharkhand</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Phone</th>
+                                        <td>6099488733</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="auto">Cart</th>
+                                        <td>
+                                            <span>
+                                                <table>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Chicken</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>mutton</td>
+                                                        <td>1p</td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="auto">Orders</th>
+                                        <td>
+                                            <span>
+                                                <table>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Fish</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Chicken</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_user_list_card">
+                    <div class="user_short_info">
+                        <span>1</span>
+                        <span>Prince</span>
+                        <span>6984512687</span>
+                        <span>Ata Pata Nai Maloom</span>
+                        <span>Delete</span>
+                    </div>
+                    <div class="user_detailed_info">
+                        <div class="all_users_name_list">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th style="text-align: center; position: relative;" rowspan="10">
+                                            <div>
+                                                <img style="margin: 20px auto;" src="Admin%20images/profile_icon_2.svg"
+                                                    alt="">
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>User ID</th>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Username</th>
+                                        <td>Prince Kumar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Address</th>
+                                        <td>Abcd, xyz 821111, Jharkhand</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Phone</th>
+                                        <td>6099488733</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="auto">Cart</th>
+                                        <td>
+                                            <span>
+                                                <table>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Chicken</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>mutton</td>
+                                                        <td>1p</td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="auto">Orders</th>
+                                        <td>
+                                            <span>
+                                                <table>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Fish</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Chicken</td>
+                                                        <td>10p</td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 
+
+
+
+
+
+
+
+    Products
+
+
+
+
+
+
+
+ -->
+
+    <div id="admin_main_body" style="display: flex;">
+        <div id="admin_users_sec_head">
+            All Products
+        </div>
+        <div id="product_table">
+            <div class="one_product_card_at_admin">
+                <div>
+                    <img src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/d97b1a18-602e-4ceb-f827-094f6687349a/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg?format=webp"
+                        alt="">
+                </div>
+                <div>
+                    <span>Category</span>
+                    <input type="text" placeholder="Enter Category" value="Chicken" readonly>
+                </div>
+                <div>
+                    <span>Name</span>
+                    <input type="text" placeholder="Enter Product Name" value="Chicken Mince (Keema)" readonly>
+                </div>
+                <div>
+                    <span>Description</span>
+                    <textarea cols="30" placeholder="Enter Product Description" rows="5"></textarea>
+                </div>
+                <div>
+                    <span>Rate</span>
+                    <input type="number" placeholder="Enter Product Rate" value="224" readonly>
+                </div>
+                <div>
+                    <span>Max-Rate</span>
+                    <input type="number"  placeholder="Enter Max-Rate of Product" value="224" readonly>
+                </div>
+                <div>
+                    <span>Stocks</span>
+                    <input type="number" placeholder="Enter Stocks" value="1000" readonly>
+                </div>
+                <div>
+                    <span>Image1</span>
+                    <input type="url"  placeholder="Main Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/d97b1a18-602e-4ceb-f827-094f6687349a/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg?format=webp" readonly>
+                </div>
+                <div>
+                    <span>Image2</span>
+                    <input type="url" placeholder="2nd Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/6f666c59-e502-30b6-fa8b-196d23529240/original/1623485172.jpg?format=webp" readonly>
+                </div>
+                <div>
+                    <span>Image3</span>
+                    <input type="url" placeholder="3rd Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/90bc55dc-c429-1cc8-c916-eef2a6b5f942/original/WhatsApp_Image_2022-06-10_at_12.37.50_PM_(1)_(1).jpeg?format=webp" readonly>
+                </div>
+                <div>
+                    <button>EDIT</button>
+                    <button>DELETE</button>
+                </div>
+            </div>
+            <div class="one_product_card_at_admin">
+                <div>
+                    <img src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/d97b1a18-602e-4ceb-f827-094f6687349a/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg?format=webp"
+                        alt="">
+                </div>
+                <div>
+                    <span>Category</span>
+                    <input type="text" placeholder="Enter Category" value="Chicken" readonly>
+                </div>
+                <div>
+                    <span>Name</span>
+                    <input type="text" placeholder="Enter Product Name" value="Chicken Mince (Keema)" readonly>
+                </div>
+                <div>
+                    <span>Description</span>
+                    <textarea cols="30" placeholder="Enter Product Description" rows="5"></textarea>
+                </div>
+                <div>
+                    <span>Rate</span>
+                    <input type="number" placeholder="Enter Product Rate" value="224" readonly>
+                </div>
+                <div>
+                    <span>Max-Rate</span>
+                    <input type="number"  placeholder="Enter Max-Rate of Product" value="224" readonly>
+                </div>
+                <div>
+                    <span>Stocks</span>
+                    <input type="number" placeholder="Enter Stocks" value="1000" readonly>
+                </div>
+                <div>
+                    <span>Image1</span>
+                    <input type="url"  placeholder="Main Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/d97b1a18-602e-4ceb-f827-094f6687349a/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg?format=webp" readonly>
+                </div>
+                <div>
+                    <span>Image2</span>
+                    <input type="url" placeholder="2nd Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/6f666c59-e502-30b6-fa8b-196d23529240/original/1623485172.jpg?format=webp" readonly>
+                </div>
+                <div>
+                    <span>Image3</span>
+                    <input type="url" placeholder="3rd Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/90bc55dc-c429-1cc8-c916-eef2a6b5f942/original/WhatsApp_Image_2022-06-10_at_12.37.50_PM_(1)_(1).jpeg?format=webp" readonly>
+                </div>
+                <div>
+                    <button>EDIT</button>
+                    <button>DELETE</button>
+                </div>
+            </div>
+            <div class="one_product_card_at_admin">
+                <div>
+                    <img src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/d97b1a18-602e-4ceb-f827-094f6687349a/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg?format=webp"
+                        alt="">
+                </div>
+                <div>
+                    <span>Category</span>
+                    <input type="text" placeholder="Enter Category" value="Chicken" readonly>
+                </div>
+                <div>
+                    <span>Name</span>
+                    <input type="text" placeholder="Enter Product Name" value="Chicken Mince (Keema)" readonly>
+                </div>
+                <div>
+                    <span>Description</span>
+                    <textarea cols="30" placeholder="Enter Product Description" rows="5"></textarea>
+                </div>
+                <div>
+                    <span>Rate</span>
+                    <input type="number" placeholder="Enter Product Rate" value="224" readonly>
+                </div>
+                <div>
+                    <span>Max-Rate</span>
+                    <input type="number"  placeholder="Enter Max-Rate of Product" value="224" readonly>
+                </div>
+                <div>
+                    <span>Stocks</span>
+                    <input type="number" placeholder="Enter Stocks" value="1000" readonly>
+                </div>
+                <div>
+                    <span>Image1</span>
+                    <input type="url"  placeholder="Main Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/d97b1a18-602e-4ceb-f827-094f6687349a/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg?format=webp" readonly>
+                </div>
+                <div>
+                    <span>Image2</span>
+                    <input type="url" placeholder="2nd Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/6f666c59-e502-30b6-fa8b-196d23529240/original/1623485172.jpg?format=webp" readonly>
+                </div>
+                <div>
+                    <span>Image3</span>
+                    <input type="url" placeholder="3rd Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/90bc55dc-c429-1cc8-c916-eef2a6b5f942/original/WhatsApp_Image_2022-06-10_at_12.37.50_PM_(1)_(1).jpeg?format=webp" readonly>
+                </div>
+                <div>
+                    <button>EDIT</button>
+                    <button>DELETE</button>
+                </div>
+            </div>
+            <div class="one_product_card_at_admin">
+                <div>
+                    <img src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/d97b1a18-602e-4ceb-f827-094f6687349a/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg?format=webp"
+                        alt="">
+                </div>
+                <div>
+                    <span>Category</span>
+                    <input type="text" placeholder="Enter Category" value="Chicken" readonly>
+                </div>
+                <div>
+                    <span>Name</span>
+                    <input type="text" placeholder="Enter Product Name" value="Chicken Mince (Keema)" readonly>
+                </div>
+                <div>
+                    <span>Description</span>
+                    <textarea cols="30" placeholder="Enter Product Description" rows="5"></textarea>
+                </div>
+                <div>
+                    <span>Rate</span>
+                    <input type="number" placeholder="Enter Product Rate" value="224" readonly>
+                </div>
+                <div>
+                    <span>Max-Rate</span>
+                    <input type="number"  placeholder="Enter Max-Rate of Product" value="224" readonly>
+                </div>
+                <div>
+                    <span>Stocks</span>
+                    <input type="number" placeholder="Enter Stocks" value="1000" readonly>
+                </div>
+                <div>
+                    <span>Image1</span>
+                    <input type="url"  placeholder="Main Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/d97b1a18-602e-4ceb-f827-094f6687349a/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg?format=webp" readonly>
+                </div>
+                <div>
+                    <span>Image2</span>
+                    <input type="url" placeholder="2nd Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/6f666c59-e502-30b6-fa8b-196d23529240/original/1623485172.jpg?format=webp" readonly>
+                </div>
+                <div>
+                    <span>Image3</span>
+                    <input type="url" placeholder="3rd Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/90bc55dc-c429-1cc8-c916-eef2a6b5f942/original/WhatsApp_Image_2022-06-10_at_12.37.50_PM_(1)_(1).jpeg?format=webp" readonly>
+                </div>
+                <div>
+                    <button>EDIT</button>
+                    <button>DELETE</button>
+                </div>
+            </div>
+            <div class="one_product_card_at_admin">
+                <div>
+                    <img src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/d97b1a18-602e-4ceb-f827-094f6687349a/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg?format=webp"
+                        alt="">
+                </div>
+                <div>
+                    <span>Category</span>
+                    <input type="text" placeholder="Enter Category" value="Chicken" readonly>
+                </div>
+                <div>
+                    <span>Name</span>
+                    <input type="text" placeholder="Enter Product Name" value="Chicken Mince (Keema)" readonly>
+                </div>
+                <div>
+                    <span>Description</span>
+                    <textarea cols="30" placeholder="Enter Product Description" rows="5"></textarea>
+                </div>
+                <div>
+                    <span>Rate</span>
+                    <input type="number" placeholder="Enter Product Rate" value="224" readonly>
+                </div>
+                <div>
+                    <span>Max-Rate</span>
+                    <input type="number"  placeholder="Enter Max-Rate of Product" value="224" readonly>
+                </div>
+                <div>
+                    <span>Stocks</span>
+                    <input type="number" placeholder="Enter Stocks" value="1000" readonly>
+                </div>
+                <div>
+                    <span>Image1</span>
+                    <input type="url"  placeholder="Main Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/d97b1a18-602e-4ceb-f827-094f6687349a/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg?format=webp" readonly>
+                </div>
+                <div>
+                    <span>Image2</span>
+                    <input type="url" placeholder="2nd Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/6f666c59-e502-30b6-fa8b-196d23529240/original/1623485172.jpg?format=webp" readonly>
+                </div>
+                <div>
+                    <span>Image3</span>
+                    <input type="url" placeholder="3rd Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/90bc55dc-c429-1cc8-c916-eef2a6b5f942/original/WhatsApp_Image_2022-06-10_at_12.37.50_PM_(1)_(1).jpeg?format=webp" readonly>
+                </div>
+                <div>
+                    <button>EDIT</button>
+                    <button>DELETE</button>
+                </div>
+            </div>
+            <div class="one_product_card_at_admin">
+                <div>
+                    <img src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/d97b1a18-602e-4ceb-f827-094f6687349a/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg?format=webp"
+                        alt="">
+                </div>
+                <div>
+                    <span>Category</span>
+                    <input type="text" placeholder="Enter Category" value="Chicken" readonly>
+                </div>
+                <div>
+                    <span>Name</span>
+                    <input type="text" placeholder="Enter Product Name" value="Chicken Mince (Keema)" readonly>
+                </div>
+                <div>
+                    <span>Description</span>
+                    <textarea cols="30" placeholder="Enter Product Description" rows="5"></textarea>
+                </div>
+                <div>
+                    <span>Rate</span>
+                    <input type="number" placeholder="Enter Product Rate" value="224" readonly>
+                </div>
+                <div>
+                    <span>Max-Rate</span>
+                    <input type="number"  placeholder="Enter Max-Rate of Product" value="224" readonly>
+                </div>
+                <div>
+                    <span>Stocks</span>
+                    <input type="number" placeholder="Enter Stocks" value="1000" readonly>
+                </div>
+                <div>
+                    <span>Image1</span>
+                    <input type="url"  placeholder="Main Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/d97b1a18-602e-4ceb-f827-094f6687349a/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg?format=webp" readonly>
+                </div>
+                <div>
+                    <span>Image2</span>
+                    <input type="url" placeholder="2nd Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/6f666c59-e502-30b6-fa8b-196d23529240/original/1623485172.jpg?format=webp" readonly>
+                </div>
+                <div>
+                    <span>Image3</span>
+                    <input type="url" placeholder="3rd Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/90bc55dc-c429-1cc8-c916-eef2a6b5f942/original/WhatsApp_Image_2022-06-10_at_12.37.50_PM_(1)_(1).jpeg?format=webp" readonly>
+                </div>
+                <div>
+                    <button>EDIT</button>
+                    <button>DELETE</button>
+                </div>
+            </div>
+            <div class="one_product_card_at_admin">
+                <div>
+                    <img src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/d97b1a18-602e-4ceb-f827-094f6687349a/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg?format=webp"
+                        alt="">
+                </div>
+                <div>
+                    <span>Category</span>
+                    <input type="text" placeholder="Enter Category" value="Chicken" readonly>
+                </div>
+                <div>
+                    <span>Name</span>
+                    <input type="text" placeholder="Enter Product Name" value="Chicken Mince (Keema)" readonly>
+                </div>
+                <div>
+                    <span>Description</span>
+                    <textarea cols="30" placeholder="Enter Product Description" rows="5"></textarea>
+                </div>
+                <div>
+                    <span>Rate</span>
+                    <input type="number" placeholder="Enter Product Rate" value="224" readonly>
+                </div>
+                <div>
+                    <span>Max-Rate</span>
+                    <input type="number"  placeholder="Enter Max-Rate of Product" value="224" readonly>
+                </div>
+                <div>
+                    <span>Stocks</span>
+                    <input type="number" placeholder="Enter Stocks" value="1000" readonly>
+                </div>
+                <div>
+                    <span>Image1</span>
+                    <input type="url"  placeholder="Main Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/d97b1a18-602e-4ceb-f827-094f6687349a/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg?format=webp" readonly>
+                </div>
+                <div>
+                    <span>Image2</span>
+                    <input type="url" placeholder="2nd Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/6f666c59-e502-30b6-fa8b-196d23529240/original/1623485172.jpg?format=webp" readonly>
+                </div>
+                <div>
+                    <span>Image3</span>
+                    <input type="url" placeholder="3rd Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/90bc55dc-c429-1cc8-c916-eef2a6b5f942/original/WhatsApp_Image_2022-06-10_at_12.37.50_PM_(1)_(1).jpeg?format=webp" readonly>
+                </div>
+                <div>
+                    <button>EDIT</button>
+                    <button>DELETE</button>
+                </div>
+            </div>
+            <div class="one_product_card_at_admin">
+                <div>
+                    <img src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/d97b1a18-602e-4ceb-f827-094f6687349a/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg?format=webp"
+                        alt="">
+                </div>
+                <div>
+                    <span>Category</span>
+                    <input type="text" placeholder="Enter Category" value="Chicken" readonly>
+                </div>
+                <div>
+                    <span>Name</span>
+                    <input type="text" placeholder="Enter Product Name" value="Chicken Mince (Keema)" readonly>
+                </div>
+                <div>
+                    <span>Description</span>
+                    <textarea cols="30" placeholder="Enter Product Description" rows="5"></textarea>
+                </div>
+                <div>
+                    <span>Rate</span>
+                    <input type="number" placeholder="Enter Product Rate" value="224" readonly>
+                </div>
+                <div>
+                    <span>Max-Rate</span>
+                    <input type="number"  placeholder="Enter Max-Rate of Product" value="224" readonly>
+                </div>
+                <div>
+                    <span>Stocks</span>
+                    <input type="number" placeholder="Enter Stocks" value="1000" readonly>
+                </div>
+                <div>
+                    <span>Image1</span>
+                    <input type="url"  placeholder="Main Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/d97b1a18-602e-4ceb-f827-094f6687349a/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg?format=webp" readonly>
+                </div>
+                <div>
+                    <span>Image2</span>
+                    <input type="url" placeholder="2nd Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/6f666c59-e502-30b6-fa8b-196d23529240/original/1623485172.jpg?format=webp" readonly>
+                </div>
+                <div>
+                    <span>Image3</span>
+                    <input type="url" placeholder="3rd Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/90bc55dc-c429-1cc8-c916-eef2a6b5f942/original/WhatsApp_Image_2022-06-10_at_12.37.50_PM_(1)_(1).jpeg?format=webp" readonly>
+                </div>
+                <div>
+                    <button>EDIT</button>
+                    <button>DELETE</button>
+                </div>
+            </div>
+            <div class="one_product_card_at_admin">
+                <div>
+                    <img src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/d97b1a18-602e-4ceb-f827-094f6687349a/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg?format=webp"
+                        alt="">
+                </div>
+                <div>
+                    <span>Category</span>
+                    <input type="text" placeholder="Enter Category" value="Chicken" readonly>
+                </div>
+                <div>
+                    <span>Name</span>
+                    <input type="text" placeholder="Enter Product Name" value="Chicken Mince (Keema)" readonly>
+                </div>
+                <div>
+                    <span>Description</span>
+                    <textarea cols="30" placeholder="Enter Product Description" rows="5"></textarea>
+                </div>
+                <div>
+                    <span>Rate</span>
+                    <input type="number" placeholder="Enter Product Rate" value="224" readonly>
+                </div>
+                <div>
+                    <span>Max-Rate</span>
+                    <input type="number"  placeholder="Enter Max-Rate of Product" value="224" readonly>
+                </div>
+                <div>
+                    <span>Stocks</span>
+                    <input type="number" placeholder="Enter Stocks" value="1000" readonly>
+                </div>
+                <div>
+                    <span>Image1</span>
+                    <input type="url"  placeholder="Main Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/d97b1a18-602e-4ceb-f827-094f6687349a/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg?format=webp" readonly>
+                </div>
+                <div>
+                    <span>Image2</span>
+                    <input type="url" placeholder="2nd Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/6f666c59-e502-30b6-fa8b-196d23529240/original/1623485172.jpg?format=webp" readonly>
+                </div>
+                <div>
+                    <span>Image3</span>
+                    <input type="url" placeholder="3rd Image URL" value="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/90bc55dc-c429-1cc8-c916-eef2a6b5f942/original/WhatsApp_Image_2022-06-10_at_12.37.50_PM_(1)_(1).jpeg?format=webp" readonly>
+                </div>
+                <div>
+                    <button>EDIT</button>
+                    <button>DELETE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="Admin.js"></script>
