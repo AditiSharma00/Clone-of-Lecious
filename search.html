@@ -6,18 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      /* #main {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 85%;
-        margin: auto;
-      }
-
-      #main img {
-        width: 80%;
-      } */
-
-      /* cards styling here */
       body {
         font-family: "Lato", sans-serif;
         background-color: #f7f6f6;
@@ -39,6 +27,7 @@
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         padding: 0px 10px 1px 10px;
         border-radius: 0px 0px 7px 7px;
+        cursor: pointer;
       }
       #parent-card > div :nth-child(1) {
         border-radius: 7px 7px 0px 0px;
@@ -85,6 +74,8 @@
     </style>
   </head>
   <body>
+    <input id="search-query" type="text" />
+
     <div id="main-cards">
       <div id="parent-card"></div>
     </div>
@@ -94,6 +85,8 @@
 <script>
   let parent_card = document.querySelector("#parent-card");
 
+  let global_data = [];
+
   let url = "https://63982e64044fa481d693d25f.mockapi.io/products";
 
   fetch(url)
@@ -102,6 +95,7 @@
     })
     .then((data) => {
       console.log(data);
+      global_data = data;
       displayCards(data);
     });
 
@@ -110,6 +104,7 @@
     //   return b.price - a.price;
     // });
 
+    parent_card.innerHTML = null;
     data.map(function (el, ind) {
       let content = `<div >
              <img width="100%" src="${el.img1}" alt="${el.title}">
@@ -122,7 +117,7 @@
         el.maxPrice
       }</strike> </h5><h5 id="green-discount" >${
         el.discount + "% OFF"
-      }</h5>  <button id="a2cart"  >ADD TO CART</button></div>
+      }</h5>  <button id="a2cart" >ADD TO CART</button></div>
              <p ><img  width="6%" src="https://www.licious.in/img/rebranding/express_delivery.svg" alt=""> &emsp; Tomorrow 7 AM - 10 AM</p>
            </div>`;
 
@@ -130,5 +125,22 @@
       div.innerHTML = content;
       parent_card.append(div);
     });
+  }
+
+  // js for search
+
+  let search_query = document.querySelector("#search-query");
+  search_query.addEventListener("input", funSearch);
+
+  let search_query_value = document.querySelector("#search-query").value;
+
+  function funSearch() {
+    console.log(search_query_value);
+    let filtered_data = global_data.filter(function (el, ind) {
+      return el.title.toUpperCase().includes(search_query_value.toUpperCase());
+    });
+
+    console.log(filtered_data);
+    displayCards(filtered_data);
   }
 </script>
