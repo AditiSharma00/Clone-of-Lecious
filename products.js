@@ -25,24 +25,35 @@ function displayProduct(data) {
       window.open("", "_self");
       localStorage.setItem("currentProduct", data1);
     });
+    div.id = "product_div";
 
     let image = document.createElement("img");
-    let title = document.createElement("div");
+    image.id = "product_image";
+    let div2 = document.createElement("div");
+    div2.id = "second_div";
+    let title = document.createElement("p");
 
     title.innerText = el.title;
+    title.id = "product_title";
 
     image.setAttribute("src", el.img1);
-    let description = document.createElement("div");
+    let description = document.createElement("p");
+    description.id = "product_description";
     description.innerText = el.description.substring(0, 70);
     let div1 = document.createElement("div");
-    let price = document.createElement("div");
+    div1.id = "product_price_cart";
+    let price = document.createElement("p");
     price.innerText = el.price;
+    price.id = "product_price";
     let btn = document.createElement("button");
     btn.innerText = "ADD TO CART";
+    btn.id = "product_btn";
     let deliveryDate = document.createElement("div");
     deliveryDate.innerText = "TOMORROW 6 AM-8 AM";
+    deliveryDate.id = "product_delivery";
     div1.append(price, btn);
-    div.append(image, title, description, div1, deliveryDate);
+    div2.append(title, description, div1);
+    div.append(image, div2, deliveryDate);
     products.append(div);
   });
 }
