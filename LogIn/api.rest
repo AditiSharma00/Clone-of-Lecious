@@ -1,0 +1,18 @@
+POST https://63982e64044fa481d693d25f.mockapi.io/products
+Content-Type: "application/json"
+{
+    "category": "category 4",
+    "img1": "img1 4",
+    "img2": "img2 4",
+    "img3": "img3 4",
+    "img4": "img4 4",
+    "title": "title 4",
+    "description": "description 4",
+    "pieces": 13,
+    "weight": 36,
+    "serves": "serves 4",
+    "price": 23,
+    "discount": 77,
+    "maxPrice": 32,
+    "id": "4"
+  }

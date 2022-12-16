@@ -1,0 +1,196 @@
+body {
+    margin: 0px;
+    padding: 0x;
+    font-family: 'Lato', sans-serif;
+    background-image: url(https://dimplemathewblog.files.wordpress.com/2020/02/1388544_bc9b_2.jpg);
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#opt_notify{
+    z-index: 60;
+    padding: 15px 10px;
+    background-color: rgba(0, 82, 129, 0.544);
+    position: fixed;
+    /* display: flex; */
+    height: 50px;
+    /* height : 130px; */
+    width: 300px;
+    /* width : 620px; */
+    border-radius: 0 5px 0 0;
+    left: -319px;
+    bottom: -79px;
+    color: white;
+    align-items: center;
+    justify-content: left;
+    transition: height 0.3s,width 0.3s;
+    backdrop-filter: blur(10px);
+    box-shadow: rgb(0, 55, 104) 3px 3px 6px 0px inset, rgba(118, 118, 118, 0.5) -3px -3px 6px 1px inset;
+}
+
+#goTOLogInPage{
+    display: block;
+}
+
+#opt_notify>div{
+    width: 300px;
+    height: 50px;
+}
+#gray_background {
+    top: 0px;
+    z-index: 45;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.434);
+}
+
+#close_login_background{
+    background-color: #d1124200;
+    width: 100%;
+    height: 100vh;
+}
+
+#log_in_sec {
+    z-index: 50;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 100vh;
+    width: 430px;
+    right: 0px;
+    background-image: url(login_img/user-login-new.jpg);
+    background-size: 100%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#head{
+    height: 140px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#head>img{
+    height: 105px;
+    width: 233px;
+    object-fit: contain;
+}
+#log_in_sec>svg{
+    position: absolute;
+    filter: invert();
+    height: 35px;
+    right: 17px;
+    top: 17px;
+    cursor: pointer;
+}
+
+#log_in_field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    padding-top: 10px;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 5px;
+}
+
+#heading {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .87)
+}
+
+#mob_num, #opt_input{
+    margin: 15px 0 0 0;
+    height: 45px;
+    width: 370px;
+    font-size: 17px;
+    border: 0px;
+    border-bottom: 1px solid rgb(173, 173, 173);
+}
+
+#numb_error{
+    justify-content: center;
+    align-items: center;
+    background-color: #d112420f;
+    font-size: 15px;
+    height: 45px;
+    width: 370px;
+    border: 1px solid #D11243;
+    color: #D11243;
+}
+#opt_sent_alert{
+    justify-content: center;
+    align-items: center;
+    background-color: #40ab0e19;
+    font-size: 15px;
+    height: 45px;
+    width: 370px;
+    border: 1px solid #40ab0e;
+    color: #40ab0e;
+}
+
+#getOTP{
+    cursor: pointer;
+    height: 45px;
+    width: 370px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    background-color: #c4c4c4;
+}
+#confirmOTP{
+    cursor: pointer;
+    height: 45px;
+    width: 370px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    background-color: #D11243;
+}
+#term_n_cond {
+    margin: 15px 0 0 0;
+    color: #6d6e71;
+}
+
+#loginSuccessText{
+    z-index: 55;
+    top: 0px;
+    position: fixed;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 2px 2px 10px #ffffff33;
+    background-color: rgba(0, 0, 0, 0.816);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    color: #D11243;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
