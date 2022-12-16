@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 85%;
+        margin: auto;
+      }
+
+      #main img {
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main"></div>
+  </body>
+</html>
+
+<script>
+  let main = document.querySelector("#main");
+
+  let url = "https://63982e64044fa481d693d25f.mockapi.io/products";
+
+  fetch(url)
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
+      console.log(data);
+      displayCards(data);
+    });
+
+  function displayCards(data) {
+    data.sort(function (a, b) {
+      return b.price - a.price;
+    });
+
+    data.map(function (el, ind) {
+      let div = document.createElement("div");
+
+      let image = document.createElement("img");
+      image.src = el.img1;
+
+      let title = document.createElement("h2");
+      title.innerText = el.title;
+
+      let description = document.createElement("p");
+      description.innerText = el.description.substring(0, 100) + "...";
+
+      let price = document.createElement("h2");
+      price.innerText = el.price;
+
+      div.append(image, title, description, price);
+
+      main.append(div);
+    });
+  }
+</script>
