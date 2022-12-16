@@ -247,6 +247,83 @@ body {
   #collapse-main-child p{
     font-size: 13px;
   }
+   /* cards styling here */
+   #main-cards{
+    width: 85%; 
+    margin: auto;
+    color: #4A4A4A;
+   }
+   #parent-card{
+    display: flex;
+    justify-content: space-between;
+    
+   }
+   #parent-card > div{
+    width:30%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     padding: 0px 10px 1px 10px; 
+     border-radius: 0px 0px 7px 7px;
+   }
+   #parent-card > div :nth-child(1){
+   border-radius: 7px 7px 0px 0px ; 
+   text-align: center;
+    
+   }
+   #parent-card > div :nth-child(3){
+    font-size: 14px;
+     
+    }
+    #parent-card > div :nth-child(4){
+      font-size: 14px;font-weight: bold;
+       
+      }
+      #parent-card >div :nth-child(5){
+      display:flex; 
+      justify-content:space-between;
+      align-items: center;
+      }
+      #red-price{
+       color: #D11243;
+      }
+      #striked-mrp{
+        opacity: 50%;
+      }
+      #green-discount{
+        color:#417505;
+      }
+      #a2cart{
+      color: white;
+       background-color:#D11243;
+        border:none;
+        border-radius: 5px ;
+        padding: 10px 10px;
+        font-size: 12px;
+      }
+      #parent-card >div :nth-child(6){
+      text-align: center;
+      opacity: 80%;
+       margin-top: -10px;
+        font-size: 14px;
+      }
+      #parent-card >div :nth-child(6){
+        margin-top:10px;
+      }
+
+
+
+  #in-the-news{
+   width: 85%;
+   margin: auto;
+  color:#636363;
+  }
+  #in-the-news-parent{
+    display: flex;
+     justify-content: space-between; 
+     gap: 20px;
+  }
+  #in-the-news-parent>div{
+  cursor: pointer;
+  }
 
 
   #cf{
@@ -267,6 +344,9 @@ body {
   }
   #third-last-div p:active{
     color: #D11243;
+  }
+  #third-last-div hr{
+    opacity: 25%;
   }
   #second-last-div{
   width: 85%;

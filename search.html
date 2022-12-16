@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      #main {
+      /* #main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         width: 85%;
@@ -15,16 +15,84 @@
 
       #main img {
         width: 80%;
+      } */
+
+      /* cards styling here */
+      body {
+        font-family: "Lato", sans-serif;
+        background-color: #f7f6f6;
+      }
+      #main-cards {
+        width: 85%;
+        margin: auto;
+        color: #4a4a4a;
+      }
+      #parent-card {
+        display: flex;
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+      }
+      #parent-card > div {
+        width: 90%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 0px 10px 1px 10px;
+        border-radius: 0px 0px 7px 7px;
+      }
+      #parent-card > div :nth-child(1) {
+        border-radius: 7px 7px 0px 0px;
+        text-align: center;
+      }
+      #parent-card > div :nth-child(3) {
+        font-size: 14px;
+      }
+      #parent-card > div :nth-child(4) {
+        font-size: 14px;
+        font-weight: bold;
+      }
+      #parent-card > div :nth-child(5) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #red-price {
+        color: #d11243;
+      }
+      #striked-mrp {
+        opacity: 50%;
+      }
+      #green-discount {
+        color: #417505;
+      }
+      #a2cart {
+        color: white;
+        background-color: #d11243;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 10px;
+        font-size: 12px;
+      }
+      #parent-card > div :nth-child(6) {
+        text-align: center;
+        opacity: 80%;
+        margin-top: -10px;
+        font-size: 14px;
+      }
+      #parent-card > div :nth-child(6) {
+        margin-top: 10px;
       }
     </style>
   </head>
   <body>
-    <div id="main"></div>
+    <div id="main-cards">
+      <div id="parent-card"></div>
+    </div>
   </body>
 </html>
 
 <script>
-  let main = document.querySelector("#main");
+  let parent_card = document.querySelector("#parent-card");
 
   let url = "https://63982e64044fa481d693d25f.mockapi.io/products";
 
@@ -38,28 +106,29 @@
     });
 
   function displayCards(data) {
-    data.sort(function (a, b) {
-      return b.price - a.price;
-    });
+    // data.sort(function (a, b) {
+    //   return b.price - a.price;
+    // });
 
     data.map(function (el, ind) {
+      let content = `<div >
+             <img width="100%" src="${el.img1}" alt="${el.title}">
+             <h4>${el.title}</h4>
+             <p >${el.description.substring(0, 90) + "..."}</p>
+             <h5 >500gms</h5>
+             <div ><h3 id="red-price" >₹${
+               el.price
+             }</h3><h5 id="striked-mrp">MRP: <strike>₹${
+        el.maxPrice
+      }</strike> </h5><h5 id="green-discount" >${
+        el.discount + "% OFF"
+      }</h5>  <button id="a2cart"  >ADD TO CART</button></div>
+             <p ><img  width="6%" src="https://www.licious.in/img/rebranding/express_delivery.svg" alt=""> &emsp; Tomorrow 7 AM - 10 AM</p>
+           </div>`;
+
       let div = document.createElement("div");
-
-      let image = document.createElement("img");
-      image.src = el.img1;
-
-      let title = document.createElement("h2");
-      title.innerText = el.title;
-
-      let description = document.createElement("p");
-      description.innerText = el.description.substring(0, 100) + "...";
-
-      let price = document.createElement("h2");
-      price.innerText = el.price;
-
-      div.append(image, title, description, price);
-
-      main.append(div);
+      div.innerHTML = content;
+      parent_card.append(div);
     });
   }
 </script>
