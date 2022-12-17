@@ -452,3 +452,8 @@ abbr {
 #second-last-div p {
   font-size: 13px;
 }
+@media only screen and (min-width: 0) {
+  html {
+    font-size: 14px;
+  }
+}

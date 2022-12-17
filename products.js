@@ -20,15 +20,16 @@ function displayProduct(data) {
   products.innerHTML = "";
   data.forEach((el) => {
     let div = document.createElement("div");
-    div.addEventListener("click", function () {
-      data1 = el.id;
-      window.open("categories_Product.html", "_self");
-      localStorage.setItem("currentProduct", data1);
-    });
+
     div.id = "product_div";
 
     let image = document.createElement("img");
     image.id = "product_image";
+    image.addEventListener("click", function () {
+      data1 = el.id;
+      window.open("categories_Product.html", "_self");
+      localStorage.setItem("currentProduct", data1);
+    });
     let div2 = document.createElement("div");
     div2.id = "second_div";
     let title = document.createElement("p");
