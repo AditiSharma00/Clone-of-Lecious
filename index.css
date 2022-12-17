@@ -88,9 +88,70 @@ body {
     transform: scale(0.97);
     cursor: pointer;
   }
+  #bottom-navbar p{
+    cursor: pointer;
+  }
   #red:hover{
     color: rgb(221, 29, 29);
   }
+  
+  #sticky-navbar{
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  margin: auto;
+  
+
+  }
+   /* categories functional */
+
+   .dropdown {
+    position: relative;
+    display: inline-block;
+
+    
+  }
+  
+  .dropdown-content {
+    
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+
+    margin-left: -40px;
+    
+
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 250px;
+    border-bottom:1px solid #eeeeee;
+  }
+  
+  .dropdown-content a:hover {background-color: #F1F1F1;
+   font-weight: bold;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  #head-1{
+   margin-left: 7.5%;
+  }
+
 
 
   #categories-1{
@@ -98,9 +159,10 @@ body {
    padding: 20px 0px;
    color: #4A4A4A;
   }
-  #head-1{
-   margin-left: 7.5%;
-  }
+
+ 
+
+
   #grid-1{
     width: 85%;
     display: grid;
@@ -133,6 +195,7 @@ body {
    font-size: 11px;
    border-radius: 7px; 
    padding: 0px 20px;
+   cursor: pointer;
   }
   #discover{
     margin: auto;
@@ -300,6 +363,8 @@ body {
         border-radius: 5px ;
         padding: 10px 10px;
         font-size: 12px;
+        cursor: pointer;
+
       }
       #parent-card >div :nth-child(6){
       text-align: center;
@@ -394,5 +459,3 @@ body {
   #footer-main-1 img{
     cursor: pointer;
   }
- 
- 
