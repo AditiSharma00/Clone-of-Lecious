@@ -42,18 +42,33 @@ function displayProduct(data) {
     description.innerText = el.description.substring(0, 70);
     let div1 = document.createElement("div");
     div1.id = "product_price_cart";
-    let price = document.createElement("p");
-    price.innerText = el.price;
+    let price = document.createElement("span");
+    price.innerText = "₹" + el.price;
     price.id = "product_price";
+    let discount_price = document.createElement("span");
+    discount_price.id = "rate2";
+    discount_price.innerText = "MRP: ₹" + el.price * 2;
     let btn = document.createElement("button");
     btn.innerText = "ADD TO CART";
     btn.id = "product_btn";
-    let deliveryDate = document.createElement("div");
+    let div4 = document.createElement("div");
+    let image1 = document.createElement("img");
+    image1.setAttribute(
+      "src",
+      "https://www.licious.in/img/rebranding/express_delivery.svg"
+    );
+    image1.id = "scooter";
+    let deliveryDate = document.createElement("span");
     deliveryDate.innerText = "TOMORROW 6 AM-8 AM";
     deliveryDate.id = "product_delivery";
-    div1.append(price, btn);
+    div4.append(image1, deliveryDate);
+    let div3 = document.createElement("div");
+    div3.id = "rate";
+    div4.id = "delivery";
+    div3.append(price, discount_price);
+    div1.append(div3, btn);
     div2.append(title, description, div1);
-    div.append(image, div2, deliveryDate);
+    div.append(image, div2, div4);
     products.append(div);
   });
 }
