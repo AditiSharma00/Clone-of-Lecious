@@ -2,6 +2,94 @@
     padding: 0%;
     margin: 0%;
 }
+
+#top-navbar {
+  border: 1px rgb(224, 224, 224) solid;
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20px;
+  padding: 3px 0px;
+  font-size: 13px;
+  color: #4a4a4a;
+
+ 
+
+  background-color: #eaeaea;
+}
+#top-1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: -80px;
+  width: 25%;
+}
+#top-2 { 
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: -95px;
+  width: 40%;
+}
+#dot {
+  color: #b4b4b4;
+  font-weight: bolder;
+}
+#top-navbar img:hover {
+  cursor: pointer;
+}
+#bottom-navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display:flex ;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 14px 0px;
+  font-size: 12px;
+  padding-left: 80px;
+
+  
+  
+  background-color: #ffffff;
+}
+#bottom-navbar>div{
+  width: 35%;
+  display: flex;
+  gap: 5px;
+}
+#bottom-navbar input{
+width: 350px;
+  height: 35px;
+  padding:0px 15px; 
+
+  background-image: url(https://www.pngarea.com/pngm/109/1164446_searchicon-png-search-icon-png-download.png);
+ background-size: 20px;
+ background-repeat: no-repeat;
+ font-size: 15px;
+ color: #979797;
+ background-color: #F8F8F8;
+ border-radius: 5px;
+ border: 1px solid rgb(226, 226, 226);
+  
+  
+  background-image: url(https://www.licious.in/img/rebranding/search_icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  outline: 0;
+  background-position: 95%;
+  background-size: 20px
+ 
+
+}
+#bottom-navbar input:hover{
+  transform: scale(0.97);
+  cursor: pointer;
+}
+#red:hover{
+  color: rgb(221, 29, 29);
+}
+
 .licious{
     height: 320px;
     width: 100%;
@@ -199,7 +287,7 @@ justify-content: space-evenly;
   }
   #pro1{
    
-    border: 1px solid black;
+    
     width: 47%;
     border-radius: 10px;
   }
@@ -219,26 +307,109 @@ justify-content: space-evenly;
     border: none;
     padding: 10px 15px 10px 15px;
     border-radius: 5px;
-    margin-left: 580px;
+    margin-left: 350px;
   }
   #im{
     height: 380px;
-    border: 1px solid black;
+   
+  }
+  #im>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
   }
   #serve>hr{
-    width: 550px;
-    margin-left: 70px;
+    width: 580px;
+    margin-left: 20px;
   }
   #in{
     display: flex;
     margin: auto;
     width: 10%;
-   
+   margin-top: 60px;
   }
-  .oval {
+  .oval1,.oval2,.oval3 {
     width: 10px;
     height: 10px;
     border-radius: 60%;
-    background: grey;
+    background: white;
     margin-right: 5px;
+    border: 1px solid rgb(82, 81, 81);
   }
+  .oval1:hover,.oval2:hover,.oval3:hover{
+    background: grey;
+  }
+  #footer{
+    width: 70%;
+    margin: auto;
+  }
+  #third-last-div{
+    width: 85%;
+    margin: auto;
+    color: #4A4A4A;
+    }
+    #third-last-div p{
+      font-size: 14.5px;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+    #third-last-div p:active{
+      color: #D11243;
+    }
+    #third-last-div h4{
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+    #footer3 p{
+      margin-top: 10px;
+    }
+    #second-last-div{
+    width: 85%;
+    margin: auto;
+     color: #4a4a4a
+    }
+    #second-last-div p{
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+    #second-last-div h5{
+      margin-bottom: 15px;
+    }
+  
+    #footer-end{
+    width: 85%;
+    margin:auto;
+    color:#4a4a4a;
+    text-align: center;
+    }
+    #footer-end>p{
+    margin-top: -10px;
+    font-size: 14px;
+    }
+    #footer-end>div{
+    display: flex; 
+    align-items: center; 
+    gap: 15px;
+    justify-content: center;
+    }
+    #footer-main-div{
+    color:#4a4a4a;
+    }
+    #footer-3{
+     width: 85%;margin: auto;
+    }
+    
+    #footer-main-1{
+      color: #4A4A4A;
+    
+    }
+    #footer-main-1 p{
+      font-size: 14px;
+      cursor: pointer;
+  
+    }
+    #footer-main-1 img{
+      cursor: pointer;
+    }
+   
+   

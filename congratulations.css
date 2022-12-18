@@ -1,16 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+
+#congrats-main-div {
+    /* border: 1px solid red; */
+    width: auto;
+    margin:auto;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#congrats-message {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    /* text-align: center; */
+    color: #000;
+    /* max-width: 473px; */
+    font-family: Lato;
+}
+
+#order-placed {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    /* text-align: center; */
+    color: #000;
+    /* max-width: 473px; */
+    font-family: Lato;
+}
+
+
+
+/* ************************************************************************** */
+
+
+
+
 body {
     font-family: 'Lato', sans-serif;
     background-color: #F7F6F6;
 
   }
-#cart_body {
-    margin: 0px;
-    padding: 0x;
-    font-family: 'Lato', sans-serif;
-    background-color: transparent;
-    z-index: 1000;
-}
- #top-navbar {
+  #top-navbar {
     border: 1px rgb(224, 224, 224) solid;
     height: 20px;
     display: flex;
@@ -31,7 +75,7 @@ body {
     margin-left: -120px;
     width: 25%;
   }
-  #top-2 { 
+  #top-2 {
     display: flex;
     justify-content: space-evenly;
     margin-right: -95px;

@@ -1,5 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-*,
+
+#top-navbar {
+  border: 1px rgb(224, 224, 224) solid;
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20px;
+  padding: 3px 0px;
+  font-size: 13px;
+  color: #4a4a4a;
+
+  background-color: #eaeaea;
+}
+#top-1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: -80px;
+  width: 25%;
+}
+#top-2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: -95px;
+  width: 40%;
+}
+#dot {
+  color: #b4b4b4;
+  font-weight: bolder;
+}
+#top-navbar img:hover {
+  cursor: pointer;
+}
+#bottom-navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 14px 0px;
+  font-size: 12px;
+  padding-left: 80px;
+  top: 0;
+  left: 0;
+   position: sticky; 
+   background-color: #ffffff;
+  z-index: 999;
+ 
+}
+#bottom-navbar > div {
+  width: 35%;
+  display: flex;
+  gap: 5px;
+}
+#bottom-navbar input {
+  width: 350px;
+  height: 35px;
+  padding: 0px 15px;
+
+  background-image: url(https://www.pngarea.com/pngm/109/1164446_searchicon-png-search-icon-png-download.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  font-size: 15px;
+  color: #979797;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  border: 1px solid rgb(226, 226, 226);
+
+  background-image: url(https://www.licious.in/img/rebranding/search_icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  outline: 0;
+  background-position: 95%;
+  background-size: 20px;
+}
+#bottom-navbar input:hover {
+  transform: scale(0.97);
+  cursor: pointer;
+}
+#red:hover {
+  color: rgb(221, 29, 29);
+}
 ::after,
 ::before {
   box-sizing: inherit;
@@ -8,11 +87,11 @@
   background-color: #f7f6f6;
 }
 .main_container {
-  border: 1px solid black;
-  margin-top: 107px;
+  /* border: 1px solid black; */
+  margin-top: 0px;
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 0%;
   background-color: #f7f6f6;
   padding-top: 1px;
   width: 80%;
@@ -61,7 +140,7 @@ a {
   height: auto;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #dee2e6;
+  /* border-bottom: 1px solid #dee2e6; */
 
   height: 40px;
   margin: -1px 25px 25px 25px;
@@ -169,8 +248,9 @@ abbr {
 }
 #sort1 {
   padding: 9px 12px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
+  /* width: -webkit-fit-content;
+  width: -moz-fit-content; */
+  /* border: 1px solid black */
   width: fit-content;
   background: #fff;
   border: 1px solid #dee2e6;
@@ -182,17 +262,17 @@ abbr {
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-  color: #212529;
+
   margin-left: 12px;
-  text-transform: capitalize;
-  min-width: -webkit-fit-content;
+  /* text-transform: capitalize; */
+  /* min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
-  min-width: fit-content;
+  min-width: fit-content; */
 }
 #sort2 {
   padding: 9px 12px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
+  /* width: -webkit-fit-content;
+  width: -moz-fit-content; */
   width: fit-content;
   background: #fff;
   border: 1px solid #dee2e6;
@@ -204,27 +284,179 @@ abbr {
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-  color: #212529;
+  /* color: #212529; */
   margin-left: 12px;
   text-transform: capitalize;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
 }
 #product {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 80%;
-  grid-gap: 25px;
+  height: 65%;
+  grid-gap: 15px;
 }
 #product_div {
-  border: 2px solid red;
-  border-radius: 12px;
+  /* border: 2px solid red; */
+
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+
+  border-radius: 7px 7px 7px 7px;
 }
 #product_image {
   width: 100%;
   height: 240px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+}
+#product_title {
+  width: 305px;
+  height: 40px;
+  margin: 0 0 10px;
+  margin-left: 10px;
+  /* min-height: 42px; */
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  position: relative;
+  line-height: 3.6;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Lato !important;
+}
+#product_description {
+  margin-left: 10px;
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  color: #727272;
+  line-height: 1.2;
+  /* white-space: nowrap; */
+  margin-bottom: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#product_price_cart {
+  margin-left: 10px;
+  display: flex;
+
+  justify-content: space-between;
+}
+#rate {
+  float: left;
+  font-size: 18px;
+  color: #d11243;
+  font-weight: 600;
+  line-height: 2;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+#rate2 {
+  font-size: 14px;
+  color: #aeaeae;
+  margin-left: 10px;
+  font-weight: 400;
+}
+#product_btn {
+  margin-top: 15px;
+  float: right;
+  text-align: center;
+
+  height: 50px;
+  overflow: visible;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  padding: 8px 8px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 6px;
+  background-color: #d11243;
+  height: 36px;
+  width: 100px;
+  margin-right: 10px;
+}
+#second_div {
+  height: 190px;
+}
+#delivery {
+  padding: 5px 0 0;
+  border-top: solid 2px #d8d8d8;
+  line-height: 2;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  min-height: 34px;
+}
+#scooter {
+  padding-right: 12px;
+  height: 24px;
+  margin-top: 1px;
+}
+#product_delivery {
+  font-family: Lato;
+  font-size: 14px;
+  color: #aeaeae;
+  vertical-align: top;
+}
+#footer-end {
+  width: 85%;
+  margin: auto;
+  color: #4a4a4a;
+  text-align: center;
+}
+#footer-end > p {
+  margin-top: -10px;
+  font-size: 14px;
+}
+#footer-end > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+#footer-main-div {
+  color: #4a4a4a;
+}
+#footer-3 {
+  width: 85%;
+  margin: auto;
+}
+
+#footer-main-1 {
+  color: #4a4a4a;
+}
+#footer-main-1 p {
+  font-size: 14px;
+  cursor: pointer;
+}
+#footer-main-1 img {
+  cursor: pointer;
+}
+#third-last-div {
+  width: 85%;
+  margin: auto;
+  color: #4a4a4a;
+}
+#third-last-div p {
+  font-size: 14.5px;
+  cursor: pointer;
+}
+#third-last-div p:active {
+  color: #d11243;
+}
+#second-last-div {
+  width: 85%;
+  margin: auto;
+  color: #4a4a4a;
+}
+#second-last-div p {
+  font-size: 13px;
+}
+@media only screen and (min-width: 0) {
+  html {
+    font-size: 14px;
+  }
 }

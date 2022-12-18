@@ -1,16 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+#checkout-div{
+    /* border: 1px solid blue; */
+    margin-top: 150px;
+    margin-bottom: 50px;
+    min-height: 200px;
+    
+}
+#checkout-left-div{
+        /* border: 1px solid red; */
+        width: 750px;
+        margin-left: 170px;
+        border-top : 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        overflow: visible;
+}
+
+#del-time-date {
+    /* border: 1px solid blue; */
+    margin: 25px;
+    font-size: 18px;
+    color: #6d6e71;
+    font-family: Lato;
+}
+
+#time-slots {
+    /* border: 1px solid red; */
+    height: 69.5px;
+    border-top: 25px;
+    font-family: Lato;
+}
+
+#time-slots-left {
+    border: 1px solid #D11243;
+    color: #D11243;;
+    font-size: 15px;;
+    padding: 12px 15px;
+    font-weight: 600;
+    position: relative;
+    border-radius: 6px;
+    width: 45%;
+    margin-right: 8px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-family: Lato;
+}
+
+#time-slots-right {
+    /* border: 1px solid blue; */
+    background-color: rgba(0,0,0,.55);
+    color: #fff;
+    padding: 10px 3px 10px 3px;
+    line-height: 1;
+    font-size: .8rem;
+    width: 25%;
+    height: 23%;
+    text-align: center;
+    border-radius: 3px;
+    /* position: fixed; */
+}
+
+
+#time-slots {
+    /* border: 1px solid purple; */
+    display: flex;
+    justify-content: left;
+    height: 49px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+/* #time-slots-right::after{
+    content: " ";
+    width:0px;
+    height: 0px;
+    border-top: 9px solid transparent;
+    border-left: 9px solid transparent;
+    border-right: 9px solid rgba(0,0,0,.55);
+    border-bottom: 9px solid transparent;
+    position:absolute;
+    right: 100%;
+    left: 36.4%;
+    top: 24.9%;
+    
+    
+} */
+
+#items-main-div {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 1.5;
+    text-align: -webkit-match-parent;
+    
+}
+
+#items-main-div img {
+    width: 65px;
+    height: 45px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-left: 18px;
+    padding-top: 20px;
+}
+
+.items-div {
+    /* border: 1px solid blue; */
+    display: flex;
+    /* justify-content; */
+    /* text-align: center; */
+    /* width: 49% */
+}
+
+#item-dec{
+    /* border: 1px solid red; */
+    padding-right: 0px;
+    line-height: 1;
+    margin-left: 15px;
+    font-family: Lato;
+    color: rgba(0,0,0,.87);
+    font-size: 15px;
+    
+
+    
+    }
+
+.item-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 25ch;
+}
+
+.item-dec-cancel{
+    margin-left: 45px;
+    cursor: pointer;
+    color:  rgba(0,0,0,.87);
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: Lato;
+    width: 15px;
+    height: 15px;
+}
+
+.item-maxPrice{
+    color:#cbcbcb;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+#pay-propay {
+    /* border: 1px solid red; */
+    margin: 15px 0px 15px 25px;
+    line-height: 1.5;
+    font-family: Lato;
+    font-size: 18px;
+    color:#6d6e71;
+    background-color: rgb(203, 203, 203);;
+    border-radius: 5px;
+    padding: 12px 25px;
+    text-align: center;
+    border:none;
+    font-weight: 600;
+    box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+    cursor:pointer;
+
+}
+
+#real-time-slots {
+    display: none;
+    /* border: 1px solid red; */
+    width: 710px;
+    height: 287.84px;
+    margin-left: 18px;
+    box-sizing: border-box;
+
+}
+
+#real-slots-header {
+    /* border: 1px solid green; */
+    /* height: 64px; */
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+#real-slots-header span{
+    font-family: Lato;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #4a4a4a;
+    text-align: left;
+
+}
+
+#real-slots-header div{
+    float: right;
+    font-size: 20px;
+    color:#cbcbcb;;
+    margin-top: -7px;
+    cursor: pointer;
+    font-weight: 700;
+    text-align: left;
+    font-family: Lato;
+}
+
+#real-slots-time {
+    /* border: 1px solid blue; */
+    padding-left: 20px;
+    margin-right: -10px;
+    text-align: left;
+    
+}
+
+#real-slots-time button {
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    color: #6e6f71;;
+    border-radius: 3px;
+    border: 1px solid #6d6e71;
+    min-width: 155px;
+    background-color: initial;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    font-family: Lato;
+}
+
+#real-slots-date {
+    width: 97%;
+    height: 40px;
+    margin: 0px auto 20px auto;
+    text-align: left;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    align-items: center;
+
+}
+
+#real-slots-date div {
+    color: #000;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #000;;
+    font-weight: 700;
+    cursor: default;
+    margin: 0 10px;
+    line-height: 1.21;
+    text-align: left;
+    font-family: Lato;
+}
+
+#real-slots-footer {
+    display: flex;;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: center;
+    font-family: Lato;
+
+}
+
+#real-slots-footer span{
+    font-size: 16px;
+    font-weight: 700;
+    color: #D11243;;
+    margin-left: auto;
+    vertical-align: middle;
+    line-height: 2.99;
+    margin-right: 23px;
+    cursor: pointer;
+
+}
+
+#real-slots-footer button {
+    border-radius: 5px;
+    background-color: #D11243;
+    font-size: 16px;
+    font-weight: 700;
+    color:#fff;;
+    padding: 9px 27px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+
+/* *********************************************************************************************** */
+
+
+
+
 body {
     font-family: 'Lato', sans-serif;
     background-color: #F7F6F6;
 
   }
-#cart_body {
-    margin: 0px;
-    padding: 0x;
-    font-family: 'Lato', sans-serif;
-    background-color: transparent;
-    z-index: 1000;
-}
- #top-navbar {
+  #top-navbar {
     border: 1px rgb(224, 224, 224) solid;
     height: 20px;
     display: flex;
@@ -31,7 +322,7 @@ body {
     margin-left: -120px;
     width: 25%;
   }
-  #top-2 { 
+  #top-2 {
     display: flex;
     justify-content: space-evenly;
     margin-right: -95px;
