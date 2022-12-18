@@ -77,14 +77,15 @@ get_OTP_Btn.addEventListener("click", () => {
                                         orders: [],
                                         address : [],
                                     }
-                                    localStorage.setItem("current_user", JSON.stringify(new_user));
-                                    await fetch("https://63982e64044fa481d693d25f.mockapi.io/users", {
+                                    let a = await fetch("https://63982e64044fa481d693d25f.mockapi.io/users", {
                                         method: "POST",
                                         headers: {
                                             "Content-type": "application/json",
                                         },
                                         body: JSON.stringify(new_user)
                                     })
+                                    let b = await a.json();
+                                    localStorage.setItem("current_user", JSON.stringify(b));
                                 } else {
                                     localStorage.setItem("current_user", JSON.stringify(current_user));
                                 }
