@@ -22,10 +22,28 @@ function uncollapsed() {
   hectic_one.style.display = "none";
 }
 
-// let bottom_navbar=document.querySelector("#bottom-navbar");
+// let slideshow = document.querySelector("#slideshow-1");
+// slideshow.innerHTML = ` <img
+// width="100%"
+// src="https://d2407na1z3fc0t.cloudfront.net/Slider/banner_63630e9d6ba0e"
+// alt="slideshow"
+// />`;
 
-// window.onscroll=function stickyFun(){
+// let count = 0;
+// let ccc = setInterval(function () {
+//   if (count % 2 == 0) {
+//     slideshow.innerHTML = ` <img
+// width="100%"
+// src="https://d2407na1z3fc0t.cloudfront.net/Slider/banner_63617b4964e45"
+// alt="slideshow"
+// />`;
+//   } else {
+//     slideshow.innerHTML = ` <img
+// width="100%"
+// src="https://d2407na1z3fc0t.cloudfront.net/Slider/banner_63630e9d6ba0e"
+// alt="slideshow"
+// />`;
+//   }
 
-//   bottom_navbar.setAttribute("class","sticky")
-//   console.log("hellow")
-// }
+//   count++;
+// }, 3000);
