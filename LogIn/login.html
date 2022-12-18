@@ -10,41 +10,45 @@
 </head>
 
 <body>
-    <button id="goTOLogInPage">user log in</button>
-    <div style="display: flex; align-items: flex-start; justify-content: right;" id="opt_notify">
-        <div> is the OTP to access your Licious account. Do not share this with anyone. Thank you for using Licious.
-            -Licious
-        </div>
-    </div>
-    <div id="gray_background" style="display: none;">
-        <div id="close_login_background"></div>
-        <div id="log_in_sec">
-            <svg id="close_login_botton" viewBox="0 0 24 24">
-                <path xmlns="http://www.w3.org/2000/svg"
-                    d="M17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41L17.59 5Z">
-                </path>
-            </svg>
-            <div id="head">
-                <img src="login_img/Untitled38_20221213180931.png" alt="">
+    <!-- <div id="body"> -->
+        <button id="goTOLogInPage">user log in</button>
+        <div style="display: flex; align-items: flex-start; justify-content: right;" id="opt_notify">
+            <div> is the OTP to access your Licious account. Do not share this with anyone. Thank you for using Licious.
+                -Licious
             </div>
-            <div id="log_in_field">
-                <div>
-                    <div id="heading">Sign In/Sign Up</div>
-                    <div style="display: flex; flex-direction: column; gap: 15px;">
-                        <input type="text" id="mob_num" maxlength="10" placeholder="Enter Mobile Number">
-                        <input type="text" id="opt_input" maxlength="4" placeholder="Enter OTP" style="display: none;">
-                        <div id="opt_sent_alert" style="display: none">An OTP has been sent to your Mobile Number</div>
-                        <div id="numb_error" style="display: none">Invalid Mobile Number.</div>
-                        <button id="getOTP">Proceed Via OTP</button>
-                        <button id="confirmOTP" style="display: none;">Confirm OTP</button>
+        </div>
+        <div id="gray_background" style="display: none;">
+            <div id="close_login_background"></div>
+            <div id="log_in_sec">
+                <svg id="close_login_botton" viewBox="0 0 24 24">
+                    <path xmlns="http://www.w3.org/2000/svg"
+                        d="M17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41L17.59 5Z">
+                    </path>
+                </svg>
+                <div id="head">
+                    <img src="login_img/Untitled38_20221213180931.png" alt="">
+                </div>
+                <div id="log_in_field">
+                    <div>
+                        <div id="heading">Sign In/Sign Up</div>
+                        <div style="display: flex; flex-direction: column; gap: 15px;">
+                            <input type="text" id="mob_num" maxlength="10" placeholder="Enter Mobile Number">
+                            <input type="text" id="opt_input" maxlength="4" placeholder="Enter OTP"
+                                style="display: none;">
+                            <div id="opt_sent_alert" style="display: none">An OTP has been sent to your Mobile Number
+                            </div>
+                            <div id="numb_error" style="display: none">Invalid Mobile Number.</div>
+                            <button id="getOTP">Proceed Via OTP</button>
+                            <button id="confirmOTP" style="display: none;">Confirm OTP</button>
+                        </div>
+                        <div id="term_n_cond">By signing in you agree to our <span
+                                style="color: #D11243; cursor: pointer;">terms and conditions</span></div>
                     </div>
-                    <div id="term_n_cond">By signing in you agree to our <span
-                            style="color: #D11243; cursor: pointer;">terms and conditions</span></div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="loginSuccessText" style="display: none;"><span>Log In Successful</span></div>
+        <div id="loginSuccessText" style="display: none;"><span>Log In Successful</span></div>
+    <!-- </div> -->
 </body>
 
 </html>
