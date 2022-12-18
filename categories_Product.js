@@ -29,21 +29,108 @@ source.addEventListener("click",()=>{
     div1.style.display = 'none';
     div2.style.display = 'block';
    
-       
-      
-
 })
-// let url ="https://63982e64044fa481d693d25f.mockapi.io/products";
-// async function getData(){
-//   try {
-//     let res = await fetch(url);
-//     let out = await res.json();
-//     display(out)
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
-// getData();
+
+
+let get =  JSON.parse(localStorage.getItem("currentProduct"));
+async function addData(){
+ try {
+  let res = await fetch(`https://63982e64044fa481d693d25f.mockapi.io/products/${get}`);
+  let categories_data = await res.json();
+  console.log(categories_data)
+  let sliderimage1 = document.getElementById("img1");
+
+sliderimage1.setAttribute("src",categories_data.img1);
+let sliderimage2 = document.getElementById("img2");
+
+sliderimage2.setAttribute("src",categories_data.img2);
+let sliderimage3 = document.getElementById("img3");
+
+sliderimage3.setAttribute("src",categories_data.img3);
+let title = document.getElementById("title");
+title.innerText = categories_data.title;
+let des = document.getElementById("des");
+des.innerText = categories_data.description;
+let price = document.getElementById("price");
+price.innerText = "MRP :"+categories_data.price;
+let image1 = document.querySelector(".oval1")
+let image2 = document.querySelector(".oval2")
+let image3 = document.querySelector(".oval3")
+image2.addEventListener("click",()=>{
+  sliderimage1.style.display = 'none';
+    sliderimage2.style.display = 'block';
+    sliderimage3.style.display = 'none';
+})
+image3.addEventListener("click",()=>{
+  sliderimage1.style.display = 'none';
+    sliderimage2.style.display = 'none';
+    sliderimage3.style.display = 'block';
+})
+image1.addEventListener("click",()=>{
+  sliderimage1.style.display = 'block';
+    sliderimage2.style.display = 'none';
+    sliderimage3.style.display = 'none';
+})
+ } catch (error) {
+  console.log(error)
+ }
+
+}
+window.onload=()=>{
+  addData()
+}
+
+
+let url ="https://63982e64044fa481d693d25f.mockapi.io/products";
+async function getData(){
+  try {
+    let res = await fetch(url);
+    let out = await res.json();
+    display(out)
+  } catch (error) {
+    console.log(error);
+  }
+}
+getData();
+
+
+let data1;
+async function display(data){
+  data.forEach((el)=>{
+    let addToCart = document.querySelector("#addToCart");
+    addToCart.addEventListener("click", function () {
+      data1 = el.id;
+      console.log(data1);
+      let current_user =
+        JSON.parse(localStorage.getItem("current_user")) || null;
+      if (current_user) {
+        current_user.cart.push([data1, 1]);
+        localStorage.setItem("current_user", JSON.stringify(current_user));
+        addToCartFunc();
+        async function addToCartFunc() {
+          let a = await fetch(
+            `https://63982e64044fa481d693d25f.mockapi.io/users/${current_user.id}`,
+            {
+              method: "PUT",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(current_user),
+            }
+          );
+        }
+      } else {
+        //open login section
+        console.log("Log In First");
+      }
+    })
+    
+  })
+}
+
+
+
+
 
 let left = document.querySelector("#left");
 let right = document.querySelector("#right");
