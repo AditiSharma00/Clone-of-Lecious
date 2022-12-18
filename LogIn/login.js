@@ -1,9 +1,10 @@
 let gray_background_login = document.querySelector("#gray_background");
-let goTOLogInPage = document.querySelector("#goTOLogInPage");
+let goTOLogInPage = document.querySelector(".goTOLogInPage");
 
-goTOLogInPage.addEventListener("click", () => [
-    gray_background_login.style.display = "flex"
-])
+goTOLogInPage.addEventListener("click", grayOn)
+function grayOn(){
+    gray_background_login.style.display = "flex";
+}
 let close_login_Btn = document.querySelector("#close_login_botton");
 let phone_input = document.querySelector("#mob_num");
 let get_OTP_Btn = document.querySelector("#getOTP");
@@ -25,7 +26,7 @@ get_OTP_Btn.addEventListener("click", () => {
         document.querySelector("#numb_error").style.display = "none"
         let otp = Math.floor(Math.random() * (9874 - 1345) + 1345);
         setTimeout(() => {
-            console.log("your OTP is", otp);
+            // console.log("your OTP is", otp);
             otp_sent_alert.style.display = "flex";
 
             setTimeout(() => {
@@ -102,7 +103,8 @@ get_OTP_Btn.addEventListener("click", () => {
                                         document.querySelector("#loginSuccessText").style.display = "none"
                                     }, 2000)
                                 }, 200)
-
+                                goTOLogInPage.innerText = "User";
+                                goTOLogInPage.removeEventListener("click",grayOn);
                             } catch (error) {
                                 console.log(error);
                             }

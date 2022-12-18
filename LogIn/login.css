@@ -1,8 +1,9 @@
-body {
+body, #body {
     margin: 0px;
     padding: 0x;
     font-family: 'Lato', sans-serif;
-    background-image: url(https://dimplemathewblog.files.wordpress.com/2020/02/1388544_bc9b_2.jpg);
+    background-color: transparent;
+    z-index: 1000;
 }
 
 textarea:focus,

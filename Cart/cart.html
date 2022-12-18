@@ -10,114 +10,119 @@
 </head>
 
 <body>
-    <button id="view_cart_btn">View Cart</button>
-    <div id="gray_cart_background" style="display: none;">
-        <div id="close_cart_background">
-            <img id="close_cart_icon"  src="https://img.icons8.com/ios/512/cancel.png" alt="">
-        </div>
-        <div id="cart_sec">
-            <div id="head">
-                Order Summary
+    <div id="body">
+        <button id="view_cart_btn">View Cart</button>
+        <div id="gray_cart_background" style="display: none;">
+            <div id="close_cart_background">
+                <img id="close_cart_icon" src="https://img.icons8.com/ios/512/cancel.png" alt="">
             </div>
-            <div id="empty_cart_sec" style="display: none;">
-                <img src="https://www.licious.in/img/rebranding/empty_cart_icon.png" alt="">
-                <div>Your cart awaits your next meal</div>
-                <button id="continue_shopping_btn">Continue Shoping</button>
-            </div>
-            <div id="discount_above_399" style="display: none;">Your cart value is less than ₹399 & delivery charge applies</div>
-            <div id="cart_field"  style="display: none;">
-                <ul id="cart_items_UL">
-                    <img style="height: 20px;" src="cart images/loading-gif.gif" alt="">
+            <div id="cart_sec">
+                <div id="head">
+                    Order Summary
+                </div>
+                <div id="empty_cart_sec" style="display: none;">
+                    <img src="https://www.licious.in/img/rebranding/empty_cart_icon.png" alt="">
+                    <div>Your cart awaits your next meal</div>
+                    <button id="continue_shopping_btn">Continue Shoping</button>
+                </div>
+                <div id="discount_above_399" style="display: none;">Your cart value is less than ₹399 & delivery charge
+                    applies</div>
+                <div id="cart_field" style="display: none;">
+                    <ul id="cart_items_UL">
+                        <img style="height: 20px;" src="cart images/loading-gif.gif" alt="">
 
-                    <!-- <li>
-                        <div>1</div>
-                        <div>
-                            <div>
-                                <div class="cart_item_name">Chicken Thigh Boneless</div>
-                                <svg class="remove_cart_item" viewBox="0 0 24 24">
-                                    <path xmlns="http://www.w3.org/2000/svg"
-                                        d="M17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41L17.59 5Z">
-                                    </path>
-                                </svg>
-                            </div>
+                        <!-- <li>
+                            <div>1</div>
                             <div>
                                 <div>
-                                    <span style="color: #D11243; font-size: 13px;">₹271.20</span>
-                                    <span
-                                        style="text-decoration: line-through; color: #6d6e71; font-size: 13px;">₹339.00</span>
+                                    <div class="cart_item_name">Chicken Thigh Boneless</div>
+                                    <svg class="remove_cart_item" viewBox="0 0 24 24">
+                                        <path xmlns="http://www.w3.org/2000/svg"
+                                            d="M17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41L17.59 5Z">
+                                        </path>
+                                    </svg>
                                 </div>
                                 <div>
-                                    <button class="quantity_dec">-</button>
-                                    <span class="quantity_count">1</span>
-                                    <button class="quantity_inc">+</button>
+                                    <div>
+                                        <span style="color: #D11243; font-size: 13px;">₹271.20</span>
+                                        <span
+                                            style="text-decoration: line-through; color: #6d6e71; font-size: 13px;">₹339.00</span>
+                                    </div>
+                                    <div>
+                                        <button class="quantity_dec">-</button>
+                                        <span class="quantity_count">1</span>
+                                        <button class="quantity_inc">+</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li> -->
+                        </li> -->
 
 
-                </ul>
-                <div style="font-size: 14px; color: #313131; margin-top: 25px;">Stop paying delivery charges. Join
-                    Meatopia today!</div>
-                <div id="meatopia">
-                    <div>
-                        <img src="../LogIn/login_img/Untitled38_20221213151926.png" alt="">
-                        <span>Meatopia</span>
-                    </div>
-                    <div>
-                        JOIN NOW >
-                    </div>
-                </div>
-                <div style=" margin: 25px auto auto; width: 370px; font-size: 15px; font-weight: 600; color: #313131;">You May Want To Try</div>
-                <div id="cart_suggestion">
-
-
-                    <!-- <div>
-                        <div>25% Off</div>
-                        <img src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/3e9023d4-e2f7-2fe6-c68f-75014733ff7e/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg"
-                            alt="">
-                        <div class="suggested_item_name">Chicken Mince (Keema)</div>
+                    </ul>
+                    <div style="font-size: 14px; color: #313131; margin-top: 25px;">Stop paying delivery charges. Join
+                        Meatopia today!</div>
+                    <div id="meatopia">
                         <div>
-                            <span style="color:#6d6e71; font-size: 13px">₹259</span>
-                            <span style="text-decoration: line-through; color:#cbcbcb!important; font-size: 13px">₹300</span>
-                        </div>
-                        <button id="add_cart_suggestion_item_btn" onclick="add_suggested_item_to_cart()">ADD</button>
-                    </div> -->
-
-
-                </div>
-                <div id="bill_details_cart">
-                    <div>BILL DETAILS</div>
-                    <div>
-                        <div>
-                            <span>Subtotal</span>
-                            <span id="cart_subtotal">₹1036</span>
+                            <img src="../LogIn/login_img/Untitled38_20221213151926.png" alt="">
+                            <span>Meatopia</span>
                         </div>
                         <div>
-                            <span>Delivery Charges</span>
-                            <span id="cart_delivery_charge">0</span>
+                            JOIN NOW >
+                        </div>
+                    </div>
+                    <div
+                        style=" margin: 25px auto auto; width: 370px; font-size: 15px; font-weight: 600; color: #313131;">
+                        You May Want To Try</div>
+                    <div id="cart_suggestion">
+
+
+                        <!-- <div>
+                            <div>25% Off</div>
+                            <img src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/3e9023d4-e2f7-2fe6-c68f-75014733ff7e/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg"
+                                alt="">
+                            <div class="suggested_item_name">Chicken Mince (Keema)</div>
+                            <div>
+                                <span style="color:#6d6e71; font-size: 13px">₹259</span>
+                                <span style="text-decoration: line-through; color:#cbcbcb!important; font-size: 13px">₹300</span>
+                            </div>
+                            <button id="add_cart_suggestion_item_btn" onclick="add_suggested_item_to_cart()">ADD</button>
+                        </div> -->
+
+
+                    </div>
+                    <div id="bill_details_cart">
+                        <div>BILL DETAILS</div>
+                        <div>
+                            <div>
+                                <span>Subtotal</span>
+                                <span id="cart_subtotal">₹1036</span>
+                            </div>
+                            <div>
+                                <span>Delivery Charges</span>
+                                <span id="cart_delivery_charge">0</span>
+                            </div>
+                            <div>
+                                <span>Discount</span>
+                                <span id="cart_total_discount">0</span>
+                            </div>
                         </div>
                         <div>
-                            <span>Discount</span>
-                            <span id="cart_total_discount">0</span>
+                            <span>Total</span>
+                            <span id="total_bill_cart" style="color: #D11243;">₹1036</span>
                         </div>
                     </div>
-                    <div>
-                        <span>Total</span>
-                        <span id="total_bill_cart" style="color: #D11243;">₹1036</span>
-                    </div>
-                </div>
-                <div style="height: 150px;"></div>
-                <div id="proceed">
-                    <div id="address_status">
-                        <span>Shipping address</span>
-                        <span id="add_address">Select Address</span>
-                    </div>
-                    <div id="total_n_proceed">
-                        <div id="total_payable_amount_cart">
-                            Total: ₹0.00
+                    <div style="height: 150px;"></div>
+                    <div id="proceed">
+                        <div id="address_status">
+                            <span>Shipping address</span>
+                            <span id="add_address">Select Address</span>
                         </div>
-                        <button id="proceed_to_checkout_btn" >Proceed to checkout</button>
+                        <div id="total_n_proceed">
+                            <div id="total_payable_amount_cart">
+                                Total: ₹0.00
+                            </div>
+                            <button id="proceed_to_checkout_btn">Proceed to checkout</button>
+                        </div>
                     </div>
                 </div>
             </div>

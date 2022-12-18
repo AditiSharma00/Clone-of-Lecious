@@ -3,6 +3,13 @@ body {
     background-color: #F7F6F6;
 
   }
+#cart_body {
+    margin: 0px;
+    padding: 0x;
+    font-family: 'Lato', sans-serif;
+    background-color: transparent;
+    z-index: 1000;
+}
  #top-navbar {
     border: 1px rgb(224, 224, 224) solid;
     height: 20px;
