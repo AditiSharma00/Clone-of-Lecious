@@ -3,7 +3,7 @@ body {
     background-color: #F7F6F6;
 
   }
-  #top-navbar {
+ #top-navbar {
     border: 1px rgb(224, 224, 224) solid;
     height: 20px;
     display: flex;
@@ -24,7 +24,7 @@ body {
     margin-left: -120px;
     width: 25%;
   }
-  #top-2 {
+  #top-2 { 
     display: flex;
     justify-content: space-evenly;
     margin-right: -95px;

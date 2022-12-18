@@ -23,7 +23,6 @@ function displayProduct(data) {
   products.innerHTML = "";
   data.forEach((el) => {
     let div = document.createElement("div");
-
     div.id = "product_div";
     console.log(data1);
     let image = document.createElement("img");
