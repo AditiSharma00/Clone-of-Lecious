@@ -2,7 +2,7 @@ body, #body {
     margin: 0px;
     padding: 0x;
     font-family: 'Lato', sans-serif;
-    background-color: transparent;
+    /* background-color: transparent; */
     z-index: 1000;
 }
 
@@ -180,7 +180,7 @@ input[type=number] {
 }
 
 #loginSuccessText{
-    z-index: 55;
+    z-index: 10000;
     top: 0px;
     position: fixed;
     font-size: 20px;
@@ -189,9 +189,35 @@ input[type=number] {
     background-color: rgba(0, 0, 0, 0.816);
     height: 100vh;
     width: 100%;
-    position: absolute;
     color: #D11243;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#parent_alert_added{
+    /* border: 1px solid; */
+    z-index: 5000;
+    height: 40px;
+    font-size: 17px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    bottom: 20px;
+}
+#alert_added{
+    margin-top: 60px;
+    transition: margin-top 0.4s;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #D11243;
+    height: 40px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    color: white;
+    box-shadow: 2px 5px 10px gray;
 }

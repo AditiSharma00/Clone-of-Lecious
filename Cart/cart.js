@@ -17,6 +17,7 @@ let cart_suggestion = document.querySelector("#cart_suggestion");
 let select_or_add_address = document.querySelector("#add_address");
 
 view_cart_btn.addEventListener("click", () => {
+    current_user = JSON.parse(localStorage.getItem("current_user")) || [];
     let all_cart_items_id = current_user.cart || '0';
     if (all_cart_items_id == '0' || all_cart_items_id.length == 0) {
         cart_field.style.display = "none";
@@ -239,6 +240,10 @@ async function adjustCartPricing() {
 
 proceed_to_checkout_btn.addEventListener("click", gotoAddressPage)
 function gotoAddressPage() {
-    console.log("Aao le chalu tumhe agey ki aur");
+    if(current_user.address.length==0){
+        window.location.href = "A_address.html";
+    }else{
+        window.location.href = "A_checkout.html";
+    }
     closeCart()
 }

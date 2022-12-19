@@ -8,131 +8,297 @@
     <title>payment</title>
 
     <link rel="stylesheet" href="A_payment.css">
+    <link rel="stylesheet" href="LogIn/login.css">
+    <link rel="stylesheet" href="Cart/cart.css">
 </head>
 
 <body>
+    <div id="cart_body">
+        <!-- <button>View Cart</button> -->
+        <div id="gray_cart_background" style="display: none;">
+            <div id="close_cart_background">
+                <img id="close_cart_icon" src="https://img.icons8.com/ios/512/cancel.png" alt="">
+            </div>
+            <div id="cart_sec">
+                <div id="head">
+                    Order Summary
+                </div>
+                <div id="empty_cart_sec" style="display: none;">
+                    <img src="https://www.licious.in/img/rebranding/empty_cart_icon.png" alt="">
+                    <div>Your cart awaits your next meal</div>
+                    <button id="continue_shopping_btn">Continue Shoping</button>
+                </div>
+                <div id="discount_above_399" style="display: none;">Your cart value is less than ₹399 & delivery charge
+                    applies</div>
+                <div id="cart_field" style="display: none;">
+                    <ul id="cart_items_UL">
+                        <img style="height: 20px;" src="cart images/loading-gif.gif" alt="">
+
+                        <!-- <li>
+                            <div>1</div>
+                            <div>
+                                <div>
+                                    <div class="cart_item_name">Chicken Thigh Boneless</div>
+                                    <svg class="remove_cart_item" viewBox="0 0 24 24">
+                                        <path xmlns="http://www.w3.org/2000/svg"
+                                            d="M17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41L17.59 5Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span style="color: #D11243; font-size: 13px;">₹271.20</span>
+                                        <span
+                                            style="text-decoration: line-through; color: #6d6e71; font-size: 13px;">₹339.00</span>
+                                    </div>
+                                    <div>
+                                        <button class="quantity_dec">-</button>
+                                        <span class="quantity_count">1</span>
+                                        <button class="quantity_inc">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+
+
+                    </ul>
+                    <div style="font-size: 14px; color: #313131; margin-top: 25px;">Stop paying delivery charges. Join
+                        Meatopia today!</div>
+                    <div id="meatopia">
+                        <div>
+                            <img src="LogIn/login_img/Untitled38_20221213151926.png" alt="">
+                            <span>Meatopia</span>
+                        </div>
+                        <div>
+                            JOIN NOW >
+                        </div>
+                    </div>
+                    <div
+                        style=" margin: 25px auto auto; width: 370px; font-size: 15px; font-weight: 600; color: #313131;">
+                        You May Want To Try</div>
+                    <div id="cart_suggestion">
+
+
+                        <!-- <div>
+                            <div>25% Off</div>
+                            <img src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/3e9023d4-e2f7-2fe6-c68f-75014733ff7e/original/Chicken_Mince_Large_Pack_Hero_Shot.jpg"
+                                alt="">
+                            <div class="suggested_item_name">Chicken Mince (Keema)</div>
+                            <div>
+                                <span style="color:#6d6e71; font-size: 13px">₹259</span>
+                                <span style="text-decoration: line-through; color:#cbcbcb!important; font-size: 13px">₹300</span>
+                            </div>
+                            <button id="add_cart_suggestion_item_btn" onclick="add_suggested_item_to_cart()">ADD</button>
+                        </div> -->
+
+
+                    </div>
+                    <div id="bill_details_cart">
+                        <div>BILL DETAILS</div>
+                        <div>
+                            <div>
+                                <span>Subtotal</span>
+                                <span id="cart_subtotal">₹1036</span>
+                            </div>
+                            <div>
+                                <span>Delivery Charges</span>
+                                <span id="cart_delivery_charge">0</span>
+                            </div>
+                            <div>
+                                <span>Discount</span>
+                                <span id="cart_total_discount">0</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Total</span>
+                            <span id="total_bill_cart" style="color: #D11243;">₹1036</span>
+                        </div>
+                    </div>
+                    <div style="height: 150px;"></div>
+                    <div id="proceed">
+                        <div id="address_status">
+                            <span>Shipping address</span>
+                            <span id="add_address">Select Address</span>
+                        </div>
+                        <div id="total_n_proceed">
+                            <div id="total_payable_amount_cart">
+                                Total: ₹0.00
+                            </div>
+                            <button id="proceed_to_checkout_btn">Proceed to checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="body">
+        <!-- <button id="goTOLogInPage">user log in</button> -->
+        <div style="display: flex; align-items: flex-start; justify-content: right;" id="opt_notify">
+            <div> is the OTP to access your Licious account. Do not share this with anyone. Thank you for using Licious.
+                -Licious
+            </div>
+        </div>
+        <div id="gray_background" style="display: none;">
+            <div id="close_login_background"></div>
+            <div id="log_in_sec">
+                <svg id="close_login_botton" viewBox="0 0 24 24">
+                    <path xmlns="http://www.w3.org/2000/svg"
+                        d="M17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41L17.59 5Z">
+                    </path>
+                </svg>
+                <div id="head">
+                    <img src="LogIn/login_img/Untitled38_20221213180931.png" alt="">
+                </div>
+                <div id="log_in_field">
+                    <div>
+                        <div id="heading">Sign In/Sign Up</div>
+                        <div style="display: flex; flex-direction: column; gap: 15px;">
+                            <input type="text" id="mob_num" maxlength="10" placeholder="Enter Mobile Number">
+                            <input type="text" id="opt_input" maxlength="4" placeholder="Enter OTP"
+                                style="display: none;">
+                            <div id="opt_sent_alert" style="display: none">An OTP has been sent to your Mobile Number
+                            </div>
+                            <div id="numb_error" style="display: none">Invalid Mobile Number.</div>
+                            <button id="getOTP">Proceed Via OTP</button>
+                            <button id="confirmOTP" style="display: none;">Confirm OTP</button>
+                        </div>
+                        <div id="term_n_cond">By signing in you agree to our <span
+                                style="color: #D11243; cursor: pointer;">terms and
+                                conditions</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="loginSuccessText" style="display: none;"><span>Log In Successful</span></div>
+    </div>
     <div id="sticky-navbar">
 
 
         <!-- top nav -->
         <div id="top-navbar">
-          <div id="top-1">
-            <p>Why DeLicious?</p>
-            <p id="dot">•</p>
-            <p>Downlaod App</p>
-            <img
-              src="https://www.licious.in/img/rebranding/ios_app_icon.svg"
-              alt="apple_logo"
-            />
-            <img
-              src="https://www.licious.in/img/rebranding/android_app_icon.svg"
-              alt="playstore_logo"
-            />
-          </div>
-          <div id="top-2">
-            <p>FSSC 22000 Certification</p>
-            <p id="dot">•</p>
-            <p>About Us</p>
-            <p id="dot">•</p>
-            <p>Careers @DeLicious</p>
-            <p id="dot">•</p>
-           <div class="dropdown"> <p  class="dropbtn">
-              Contact Us
-              <img
-                width="10%"
-                src="https://www.licious.in/img/rebranding/down-arrow.png"
-                alt="down-arrow"
-              />
-              
-            </p>
-            <div class="dropdown-content">
-              <a href="#"  style="font-size: 12px; border-bottom:1px solid #ebebeb;">1800-1800-180</a>
-              <a href="#" style="font-size: 12px;">talktous@DeLicious.com</a>
+            <div id="top-1">
+                <p>Why DeLicious?</p>
+                <p id="dot">•</p>
+                <p>Downlaod App</p>
+                <img src="https://www.licious.in/img/rebranding/ios_app_icon.svg" alt="apple_logo" />
+                <img src="https://www.licious.in/img/rebranding/android_app_icon.svg" alt="playstore_logo" />
             </div>
-          </div>
-          
-    
-          <a href="#" style="margin-left: -25px;"><p > Admin</p></a>
-          </div>
+            <div id="top-2">
+                <p>FSSC 22000 Certification</p>
+                <p id="dot">•</p>
+                <p>About Us</p>
+                <p id="dot">•</p>
+                <p>Careers @DeLicious</p>
+                <p id="dot">•</p>
+                <div class="dropdown">
+                    <p class="dropbtn">
+                        Contact Us
+                        <img width="10%" src="https://www.licious.in/img/rebranding/down-arrow.png" alt="down-arrow" />
+
+                    </p>
+                    <div class="dropdown-content">
+                        <a href="#" style="font-size: 12px; border-bottom:1px solid #ebebeb;">1800-1800-180</a>
+                        <a href="#" style="font-size: 12px;">talktous@DeLicious.com</a>
+                    </div>
+                </div>
+
+
+                <a href="#" style="margin-left: -25px;">
+                    <p> Admin</p>
+                </a>
+            </div>
         </div>
-    
+
         <!-- bottom nav -->
         <div id="bottom-navbar">
-    
-          <div>
-            <a href="./index.html"> <img width="80%" src="./main_logo.png" alt="main_logo" /></a>
-          </div>
-          <div>
-            
-              <img width="18%"
-                src="https://www.licious.in/img/rebranding/location_icon.svg"
-                alt="location_icon"
-              />
-              
-              <div class="dropdown">
-                <p class="dropbtn">Location</p>
-                <div class="dropdown-content" style="width:50%; font-size: 20px;margin-left: -80px;">
-                  <input style="background-image:none;width: 150px; cursor:text" type="text" placeholder="Enter your location">
-                   </div>
-              </div>
-      
-              
-           
-          </div>
-          <div>
-            <input style="cursor:text" type="text" placeholder="Search for any delicious product" />
-          </div>
-          <div style="padding-left: 85px;">
-            <img
-              src="https://www.licious.in/img/rebranding/category-dropdown-icon.svg"
-              alt="categories-logo"
-            />
-    
-            <div class="dropdown">
-             <p id="red" class="dropbtn">Categories</p>
-              <div class="dropdown-content">
-    
-          
-                <a href="#">  <img width="15%" src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/d52759ea-ba5a-0f5b-3dc1-d28875335a3f/original/Todays_Deal_1.png" alt="">Today's Deals</a>
-                <a href="#"> <img width="15%" src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/ad04872e-60af-387c-533c-efa7dc6eb565/original/Chicken_(1).png" alt=""> Chicken</a>
-                <a href="#"> <img width="15%" src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/eb162d28-5f88-a381-1d45-7f2f66d2c776/original/FIsh.png" alt=""> Fish & Seafood</a>
-                <a href="#"><img width="15%" src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/7113e792-7025-9e6f-6057-7174edf30856/original/Mu.png" alt=""> Mutton</a>
-                <a href="#"><img width="15%" src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/43faaebc-f2ae-102a-ea01-af3e6c37a890/original/RTC.png" alt=""> Ready to Cook</a>
-    
-                <a href="#"><img width="15%" src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/404e48e5-c887-1e12-7a3a-232e01fc9771/original/Prawn.png" alt=""> Prawns</a>
-                <a href="#"><img width="15%" src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/5c7f1b3a-47b4-3ade-f170-f003cace2482/original/Coldcuts.png" alt=""> Cold Cuts</a>
-                <a href="#"><img width="15%" src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/88d8c760-ee1f-7696-7827-fcc9661925cc/original/Spread_Bottle1.png" alt=""> Spreads</a>
-                <a href="#"><img width="15%" src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/04d58840-f014-e613-24d4-1908db9a7e63/original/Eggs.png" alt=""> Eggs</a>
-                <a href="#"><img width="15%" src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/189690c6-c9d5-2441-938b-6c7e124972c7/original/Biryani.png" alt=""> Biryani & Kebab</a>
-                <a href="#"><img width="15%" src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/fe100e84-9e15-c179-ecca-7cde26af9969/original/PBM_6_(7).png" alt=""> Plant Based Meat</a>
-                <a href="#"><img width="15%" src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/f8280057-1010-7378-c66e-dd35a1782741/original/Masala_180x180_App.png" alt=""> Meat Masala</a>
-              </div>
+
+            <div>
+                <a href="./index.html"> <img width="80%" src="./main_logo.png" alt="main_logo" /></a>
             </div>
-            
-          </div>
-          <div>
-            <img
-              src="https://www.licious.in/img/rebranding/profile_icon.svg"
-              alt="login-logo"
-            />
-             <p id="red">Login</p>
-          </div>
-          <div>
-            <img
-              src="https://www.licious.in/img/rebranding/cart_icon.svg"
-              alt="cart-logo"
-            />
-            <!-- <p style=" color: white; position:initial; font-weight: bolder;margin-left: -15px;margin-bottom: 35px;background-color: #D11243;width: 15px; text-align: center; border-radius: 50%">1</p> -->
-             <p>Cart</p> 
-          </div>
+            <div>
+
+                <img width="18%" src="https://www.licious.in/img/rebranding/location_icon.svg" alt="location_icon" />
+
+                <div class="dropdown">
+                    <p class="dropbtn">Location</p>
+                    <div class="dropdown-content" style="width:50%; font-size: 20px;margin-left: -80px;">
+                        <input style="background-image:none;width: 150px; cursor:text" type="text"
+                            placeholder="Enter your location">
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div>
+                <input style="cursor:text" type="text" placeholder="Search for any delicious product" />
+            </div>
+            <div style="padding-left: 85px;">
+                <img src="https://www.licious.in/img/rebranding/category-dropdown-icon.svg" alt="categories-logo" />
+
+                <div class="dropdown">
+                    <p id="red" class="dropbtn">Categories</p>
+                    <div class="dropdown-content">
+
+
+                        <a href="#"> <img width="15%"
+                                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/d52759ea-ba5a-0f5b-3dc1-d28875335a3f/original/Todays_Deal_1.png"
+                                alt="">Today's Deals</a>
+                        <a href="#"> <img width="15%"
+                                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/ad04872e-60af-387c-533c-efa7dc6eb565/original/Chicken_(1).png"
+                                alt=""> Chicken</a>
+                        <a href="#"> <img width="15%"
+                                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/eb162d28-5f88-a381-1d45-7f2f66d2c776/original/FIsh.png"
+                                alt=""> Fish & Seafood</a>
+                        <a href="#"><img width="15%"
+                                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/7113e792-7025-9e6f-6057-7174edf30856/original/Mu.png"
+                                alt=""> Mutton</a>
+                        <a href="#"><img width="15%"
+                                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/43faaebc-f2ae-102a-ea01-af3e6c37a890/original/RTC.png"
+                                alt=""> Ready to Cook</a>
+
+                        <a href="#"><img width="15%"
+                                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/404e48e5-c887-1e12-7a3a-232e01fc9771/original/Prawn.png"
+                                alt=""> Prawns</a>
+                        <a href="#"><img width="15%"
+                                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/5c7f1b3a-47b4-3ade-f170-f003cace2482/original/Coldcuts.png"
+                                alt=""> Cold Cuts</a>
+                        <a href="#"><img width="15%"
+                                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/88d8c760-ee1f-7696-7827-fcc9661925cc/original/Spread_Bottle1.png"
+                                alt=""> Spreads</a>
+                        <a href="#"><img width="15%"
+                                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/04d58840-f014-e613-24d4-1908db9a7e63/original/Eggs.png"
+                                alt=""> Eggs</a>
+                        <a href="#"><img width="15%"
+                                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/189690c6-c9d5-2441-938b-6c7e124972c7/original/Biryani.png"
+                                alt=""> Biryani & Kebab</a>
+                        <a href="#"><img width="15%"
+                                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/fe100e84-9e15-c179-ecca-7cde26af9969/original/PBM_6_(7).png"
+                                alt=""> Plant Based Meat</a>
+                        <a href="#"><img width="15%"
+                                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/f8280057-1010-7378-c66e-dd35a1782741/original/Masala_180x180_App.png"
+                                alt=""> Meat Masala</a>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <img src="https://www.licious.in/img/rebranding/profile_icon.svg" alt="login-logo" />
+                <p id="red" class="goTOLogInPage">Login</p>
+            </div>
+            <div id="view_cart_btn">
+                <img src="https://www.licious.in/img/rebranding/cart_icon.svg" alt="cart-logo" />
+                <!-- <p style=" color: white; position:initial; font-weight: bolder;margin-left: -15px;margin-bottom: 35px;background-color: #D11243;width: 15px; text-align: center; border-radius: 50%">1</p> -->
+                <p>Cart</p>
+            </div>
         </div>
-      
-      
-      </div>    
+
+
+    </div>
 
 
 
-      <!-- *********************************************************************************************** -->
+    <!-- *********************************************************************************************** -->
 
     <div id="payment-main-div">
         <div id="payment-left-div">
@@ -380,25 +546,38 @@
                 </div>
                 <hr>
 
-                <input type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" onKeyDown="if(this.value.length==16 && event.keyCode!=8) return false;" class="ninetyPer" id="user-card-no" placeholder="Enter card no.">
+                <input type="number"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"
+                    onKeyDown="if(this.value.length==16 && event.keyCode!=8) return false;" class="ninetyPer"
+                    id="user-card-no" placeholder="Enter card no.">
                 <br>
-                <input type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" onKeyDown="if(this.value.length==2 && event.keyCode!=8) return false;" class="twentytyPer" id="careMonth"  placeholder="MM">
+                <input type="number"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"
+                    onKeyDown="if(this.value.length==2 && event.keyCode!=8) return false;" class="twentytyPer"
+                    id="careMonth" placeholder="MM">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" onKeyDown="if(this.value.length==4 && event.keyCode!=8) return false;" class="twentytyPer" id="cardYear"  placeholder="YYYY">
+                <input type="number"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"
+                    onKeyDown="if(this.value.length==4 && event.keyCode!=8) return false;" class="twentytyPer"
+                    id="cardYear" placeholder="YYYY">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" onKeyDown="if(this.value.length==4 && event.keyCode!=8) return false;" class="twentytyPer"  id="cardCvv"   placeholder="Enter CVV" >
+                <input type="number"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"
+                    onKeyDown="if(this.value.length==4 && event.keyCode!=8) return false;" class="twentytyPer"
+                    id="cardCvv" placeholder="Enter CVV">
                 <br>
-                <input type="text" class="ninetyPer" id="cardName"  placeholder="Name of card.">
+                <input type="text" class="ninetyPer" id="cardName" placeholder="Name of card.">
                 <br>
                 <div id="checkbox-div">
-                    <input type="checkbox" id="pay-checkbox"><span id="checkbox-span">Securely save card for future use</span>
+                    <input type="checkbox" id="pay-checkbox"><span id="checkbox-span">Securely save card for future
+                        use</span>
                 </div>
-                
+
                 <br>
-                
-                    <button id="pay-button"> Pay</button>
-               
-                
+
+                <button id="pay-button"> Pay</button>
+
+
 
             </div>
 
@@ -434,9 +613,10 @@
                 </div>
                 <hr>
                 <div id="pay-total" class="final-pay-div">
-                    <span class="bill-left-span" style="font-size:20px ;font-weight: 700" >Total</span>
+                    <span class="bill-left-span" style="font-size:20px ;font-weight: 700">Total</span>
                     &nbsp;&nbsp;&nbsp;
-                    <span style="color:#D11243;font-size:20px ;font-weight: 700" class="bill-right-span">&#8377;&nbsp;256</span>
+                    <span style="color:#D11243;font-size:20px ;font-weight: 700"
+                        class="bill-right-span">&#8377;&nbsp;256</span>
                 </div>
             </div>
         </div>
@@ -446,152 +626,192 @@
     <!-- ******************************************************************************************** -->
 
 
-    <div id="footer-main-1" >
-        <div id="footer-3" > <div><img style="margin-top: 50px;margin-left: -15px; " width="15%" src="./main_logo.png" alt=""></div> <div><hr style="opacity: 25%;"></div></div>
-      
-      
-        <div style="width: 85%;gap: 10px; margin: auto; display: flex;justify-content: space-between;">
-  
-          <div>
-            <h5>USEFUL LINKS</h5>
-            <p>Why DeLicious?</p>
-            <p>Refer & Earn</p>
-            <p>DeLicious Cash & Cash+</p>
-            <p>Careers</p>
-            <p>BLOG</p>
-            <p>Campaign</p>
-            <p>Bug Bounty Guidelines</p>
-            <p>About Us</p>
-            <p>FSSC 22000 Certification</p>
-            <p>FSSAI Licenses</p>
-            <p>SA8000 Certification</p>
-            <p>Sitemap</p>
-          </div>
-    
-          <div>
-            <h5>EXPERIENCE DELICIOUS APP ON MOBILE</h5>
-            <div style="display: flex; justify-content: space-between;gap:7px;margin-top: -15px;">
-              <img width="50%" src="https://www.licious.in/img/rebranding/app-store-new.svg" alt="applstore logo">
-              <img width="50%" src="https://www.licious.in/img/rebranding/play-store-new.png" alt="playstore logo">
+    <div id="footer-main-1">
+        <div id="footer-3">
+            <div><img style="margin-top: 50px;margin-left: -15px; " width="15%" src="./main_logo.png" alt=""></div>
+            <div>
+                <hr style="opacity: 25%;">
             </div>
-          </div>
-          
-    
-          <div>
-            <h5>CONTACT US</h5>
-            <p>Call: 1800-1800-180</p>
-            <p>Talktous@DeLicious.com</p>
-            <h5>REGISTERED OFFICE ADDRESS:</h5>
-            <p>House of DeLicious, Zed Pearl, No 12, </p>
-            <p>Domlur Layout</p>
-            <p>Bangalore, Karnataka - 560071</p>
-          </div>
-  
-    
-     
-          <div>
-          <p>T&C
-          </p>
-          <p>FAQ</p>
-          <p>Privacy Policy
-          </p>
-          <h5>HAVE SECURITY CONCERN?
-          </h5>
-          <p>Mail us to:</p>
-          <p>security@Delicious.com</p>
-      </div>
-    
-      <!-- <div style="border: 1px solid red; width: auto; margin-left: 80px; ">
+        </div>
+
+
+        <div style="width: 85%;gap: 10px; margin: auto; display: flex;justify-content: space-between;">
+
+            <div>
+                <h5>USEFUL LINKS</h5>
+                <p>Why DeLicious?</p>
+                <p>Refer & Earn</p>
+                <p>DeLicious Cash & Cash+</p>
+                <p>Careers</p>
+                <p>BLOG</p>
+                <p>Campaign</p>
+                <p>Bug Bounty Guidelines</p>
+                <p>About Us</p>
+                <p>FSSC 22000 Certification</p>
+                <p>FSSAI Licenses</p>
+                <p>SA8000 Certification</p>
+                <p>Sitemap</p>
+            </div>
+
+            <div>
+                <h5>EXPERIENCE DELICIOUS APP ON MOBILE</h5>
+                <div style="display: flex; justify-content: space-between;gap:7px;margin-top: -15px;">
+                    <img width="50%" src="https://www.licious.in/img/rebranding/app-store-new.svg" alt="applstore logo">
+                    <img width="50%" src="https://www.licious.in/img/rebranding/play-store-new.png"
+                        alt="playstore logo">
+                </div>
+            </div>
+
+
+            <div>
+                <h5>CONTACT US</h5>
+                <p>Call: 1800-1800-180</p>
+                <p>Talktous@DeLicious.com</p>
+                <h5>REGISTERED OFFICE ADDRESS:</h5>
+                <p>House of DeLicious, Zed Pearl, No 12, </p>
+                <p>Domlur Layout</p>
+                <p>Bangalore, Karnataka - 560071</p>
+            </div>
+
+
+
+            <div>
+                <p>T&C
+                </p>
+                <p>FAQ</p>
+                <p>Privacy Policy
+                </p>
+                <h5>HAVE SECURITY CONCERN?
+                </h5>
+                <p>Mail us to:</p>
+                <p>security@Delicious.com</p>
+            </div>
+
+            <!-- <div style="border: 1px solid red; width: auto; margin-left: 80px; ">
         <img width="35%" src="https://www.licious.in/img/rebranding/3-dsecure.png" alt="visa-mastercard">
       </div> -->
-    
+
         </div>
-  
+
         <div style="display: flex; justify-content: space-between; width: 19%; margin-left: 290px;">
-          <h4>KEEP IN TOUCH</h4>
-          <div style="display: flex; gap: 14px; margin-top: 18px;">
-            <img id="cf" width="23px" height="23px" src="https://www.licious.in/img/rebranding/insta_color.png" alt="insta">
-          <img id="cf" width="23px" height="23px" src="https://www.licious.in/img/rebranding/fb_color.png" alt="meta">
-          <img id="cf" width="23px" height="23px" src="https://www.licious.in/img/rebranding/twitter_color.png" alt="twitter">
-          </div>
-          
-  
+            <h4>KEEP IN TOUCH</h4>
+            <div style="display: flex; gap: 14px; margin-top: 18px;">
+                <img id="cf" width="23px" height="23px" src="https://www.licious.in/img/rebranding/insta_color.png"
+                    alt="insta">
+                <img id="cf" width="23px" height="23px" src="https://www.licious.in/img/rebranding/fb_color.png"
+                    alt="meta">
+                <img id="cf" width="23px" height="23px" src="https://www.licious.in/img/rebranding/twitter_color.png"
+                    alt="twitter">
+            </div>
+
+
         </div>
-      
-      </div>
-  
-  
-  
-  
-  
-  
-     <div id="third-last-div" >
-     <h4>CITIES WE SERVE</h4>
-     <hr>
-     <p>Bengaluru &emsp;|&emsp; NCR &emsp;| &emsp;Hyderabad &emsp;|&emsp;Chandigarh &emsp;|&emsp; Panchkula &emsp; | &emsp;Mohali &emsp;|&emsp;Mumbai &emsp;|&emsp; Pune &emsp; | &emsp;Chennai &emsp;|&emsp;Coimbatore &emsp;|&emsp; Jaipur &emsp; | &emsp;Cochin &emsp;|&emsp;Vijaywada &emsp;|&emsp; Visakhapatnam &emsp; | &emsp;Kolkata &emsp;|&emsp;Lucknow &emsp;|&emsp; Kanpur &emsp; | &emsp;Nagpur &emsp; </p>
-     <h4>POPULAR SEARCHES</h4>
-     <hr>
-     <h4>CHICKEN</h4>
-     <p>Chicken Breast (Boneless) &emsp;|&emsp;  Chicken (Skinless) - Curry Cut (Large) &emsp; | &emsp; Chicken Mince/Keema &emsp;|&emsp; Chicken Leg Curry Cut (Large - 4 pieces) &emsp;|&emsp;  Chicken Lollipop - 10 Pieces &emsp; | &emsp;Tender Spring Chicken Curry Cut &emsp;|&emsp; Chicken - Whole with Skin &emsp;|&emsp;  Chicken Curry Cut (Small - 13 to 16 Pieces)  </p>
-     <hr>
-     <h4>EGGS</h4>
-     <p>Classic Eggs - Pack Of 6</p>
-     <hr>
-     <h4>MUTTON</h4>
-     <p>Goat Mince/Keema &emsp;|&emsp;   Rich Goat Curry Cut (Small - 16 to 20 pieces) &emsp; | &emsp;  Lean Goat Curry Cut (Small - 16 to 20 pieces) &emsp;|&emsp;  Lean Lamb Curry Cut (Small - 16 to 20 pieces) &emsp;|&emsp; Rich Lamb Curry Cut (Small - 16 to 20 pieces) &emsp; | &emsp;Lamb Ribs and Chops &emsp;|&emsp;  Goat Ribs and Chops   </p>
-     <hr>
-     <h4>FISH & SEAFOOD</h4>
-     <p>Basa Fillet (Platinum Grade) &emsp;|&emsp;  Premium Grade Mackerel (Cleaned) &emsp; | &emsp;   Freshwater Rohu Large - Bengali Cut (w/o Head) &emsp;|&emsp;   Freshwater Rohu - Bengali Cut (Without Head) &emsp;|&emsp; Medium Prawns - Without Tail &emsp; | &emsp; Seer (Surmai) Steaks &emsp;|&emsp;  Freshwater Rohu Small - Bengali Cut (without Head)  </p>
-     <hr>
-     <h4>READY TO COOK</h4>
-     <p>Caribbean Jerk Chicken (Boneless) &emsp;|&emsp;  Habanero Chicken Wings (Hot) - 10 Pieces &emsp; | &emsp;  Creamy Afghani Chicken &emsp;|&emsp;   Peri Peri Chicken (Spicy) &emsp;|&emsp;  Chicken Cutlet (Bengali Style) </p>
-     <hr>
-     <h4>EXOTIC MEATS</h4>
-     <p>Atlantic Salmon Steaks &emsp;|&emsp;  Blue Crab &emsp; | &emsp;  Sea Bass/ Bhetki Fillet </p>
-     <hr>
-     <h4>SPREADS</h4>
-     <p>Chunky Butter Chicken Spread (Single Serve) &emsp;|&emsp;   Chunky Continental Chicken Spread &emsp; | &emsp;  Chunky Shawarma Chicken Spread (Single Serve) </p>
-     <hr>
-     <h4>KEBABS</h4>
-     <p>Afghani Murgh Seekh Kebab &emsp;|&emsp;    Purani Dilli ki Mutton Seekh Kebab </p>
-     <hr>
-     <h4>MEAT MASALA</h4>
-     <p>Classic Meat Masala &emsp;|&emsp;  Dakshin Pepper Fry Masala &emsp;|&emsp;   Chatpata Fish Fry Masala&emsp;|&emsp;   Classic Chicken Masala&emsp;|&emsp;   Asli Garam Masala&emsp;|&emsp;    Original Tandoori Chicken Masala &emsp;|&emsp;    Shandaar Butter Chicken Masala&emsp;|&emsp;  Khansama Biryani Masala</p>
-     
-     <br>
-  
-     </div>
-  
-  
-      <div id="second-last-div" >
+
+    </div>
+
+
+
+
+
+
+    <div id="third-last-div">
+        <h4>CITIES WE SERVE</h4>
+        <hr>
+        <p>Bengaluru &emsp;|&emsp; NCR &emsp;| &emsp;Hyderabad &emsp;|&emsp;Chandigarh &emsp;|&emsp; Panchkula &emsp; |
+            &emsp;Mohali &emsp;|&emsp;Mumbai &emsp;|&emsp; Pune &emsp; | &emsp;Chennai &emsp;|&emsp;Coimbatore
+            &emsp;|&emsp; Jaipur &emsp; | &emsp;Cochin &emsp;|&emsp;Vijaywada &emsp;|&emsp; Visakhapatnam &emsp; |
+            &emsp;Kolkata &emsp;|&emsp;Lucknow &emsp;|&emsp; Kanpur &emsp; | &emsp;Nagpur &emsp; </p>
+        <h4>POPULAR SEARCHES</h4>
+        <hr>
+        <h4>CHICKEN</h4>
+        <p>Chicken Breast (Boneless) &emsp;|&emsp; Chicken (Skinless) - Curry Cut (Large) &emsp; | &emsp; Chicken
+            Mince/Keema &emsp;|&emsp; Chicken Leg Curry Cut (Large - 4 pieces) &emsp;|&emsp; Chicken Lollipop - 10
+            Pieces &emsp; | &emsp;Tender Spring Chicken Curry Cut &emsp;|&emsp; Chicken - Whole with Skin &emsp;|&emsp;
+            Chicken Curry Cut (Small - 13 to 16 Pieces) </p>
+        <hr>
+        <h4>EGGS</h4>
+        <p>Classic Eggs - Pack Of 6</p>
+        <hr>
+        <h4>MUTTON</h4>
+        <p>Goat Mince/Keema &emsp;|&emsp; Rich Goat Curry Cut (Small - 16 to 20 pieces) &emsp; | &emsp; Lean Goat Curry
+            Cut (Small - 16 to 20 pieces) &emsp;|&emsp; Lean Lamb Curry Cut (Small - 16 to 20 pieces) &emsp;|&emsp; Rich
+            Lamb Curry Cut (Small - 16 to 20 pieces) &emsp; | &emsp;Lamb Ribs and Chops &emsp;|&emsp; Goat Ribs and
+            Chops </p>
+        <hr>
+        <h4>FISH & SEAFOOD</h4>
+        <p>Basa Fillet (Platinum Grade) &emsp;|&emsp; Premium Grade Mackerel (Cleaned) &emsp; | &emsp; Freshwater Rohu
+            Large - Bengali Cut (w/o Head) &emsp;|&emsp; Freshwater Rohu - Bengali Cut (Without Head) &emsp;|&emsp;
+            Medium Prawns - Without Tail &emsp; | &emsp; Seer (Surmai) Steaks &emsp;|&emsp; Freshwater Rohu Small -
+            Bengali Cut (without Head) </p>
+        <hr>
+        <h4>READY TO COOK</h4>
+        <p>Caribbean Jerk Chicken (Boneless) &emsp;|&emsp; Habanero Chicken Wings (Hot) - 10 Pieces &emsp; | &emsp;
+            Creamy Afghani Chicken &emsp;|&emsp; Peri Peri Chicken (Spicy) &emsp;|&emsp; Chicken Cutlet (Bengali Style)
+        </p>
+        <hr>
+        <h4>EXOTIC MEATS</h4>
+        <p>Atlantic Salmon Steaks &emsp;|&emsp; Blue Crab &emsp; | &emsp; Sea Bass/ Bhetki Fillet </p>
+        <hr>
+        <h4>SPREADS</h4>
+        <p>Chunky Butter Chicken Spread (Single Serve) &emsp;|&emsp; Chunky Continental Chicken Spread &emsp; | &emsp;
+            Chunky Shawarma Chicken Spread (Single Serve) </p>
+        <hr>
+        <h4>KEBABS</h4>
+        <p>Afghani Murgh Seekh Kebab &emsp;|&emsp; Purani Dilli ki Mutton Seekh Kebab </p>
+        <hr>
+        <h4>MEAT MASALA</h4>
+        <p>Classic Meat Masala &emsp;|&emsp; Dakshin Pepper Fry Masala &emsp;|&emsp; Chatpata Fish Fry
+            Masala&emsp;|&emsp; Classic Chicken Masala&emsp;|&emsp; Asli Garam Masala&emsp;|&emsp; Original Tandoori
+            Chicken Masala &emsp;|&emsp; Shandaar Butter Chicken Masala&emsp;|&emsp; Khansama Biryani Masala</p>
+
+        <br>
+
+    </div>
+
+
+    <div id="second-last-div">
         <hr style="opacity: 25%;">
         <h5>We will sell only the meat that we would eat ourselves.</h5>
-        <p>At DeLicious, we’re big meat-lovers. And by big, we mean huge. So when it comes to the meat we put on your plate, we’re extremely picky. Every single product is handpicked by a team with years of experience.</p>
-        
+        <p>At DeLicious, we’re big meat-lovers. And by big, we mean huge. So when it comes to the meat we put on your
+            plate, we’re extremely picky. Every single product is handpicked by a team with years of experience.</p>
+
         <h5>If it’s not fresh, we won’t sell it</h5>
-        <p>For meat to stay fresh and retain its natural juices, it needs to be stored at a temperature between 0° and 5°C. We maintain this temperature from the time we procure the product to cleaning, cutting and storing it, until it leaves for delivery. And even when it’s out for delivery, we keep it chilled right up to your doorstep.Did we mention that we’re obsessed?</p>
-  
+        <p>For meat to stay fresh and retain its natural juices, it needs to be stored at a temperature between 0° and
+            5°C. We maintain this temperature from the time we procure the product to cleaning, cutting and storing it,
+            until it leaves for delivery. And even when it’s out for delivery, we keep it chilled right up to your
+            doorstep.Did we mention that we’re obsessed?</p>
+
         <h5>We will charge only for what you buy
         </h5>
-        <p>Doesn’t everyone do this? Not really. Most other places first weigh the meat, then cut up the pieces, and throw out the parts which aren’t fit to eat, such as offal, gizzard, wingtips, etc. But you still pay based on the original weight even though what you finally get is 10% to 30% less</p>
-     <br>
-      </div> 
-  
-  
-      <div id="footer-end">
+        <p>Doesn’t everyone do this? Not really. Most other places first weigh the meat, then cut up the pieces, and
+            throw out the parts which aren’t fit to eat, such as offal, gizzard, wingtips, etc. But you still pay based
+            on the original weight even though what you finally get is 10% to 30% less</p>
+        <br>
+    </div>
+
+
+    <div id="footer-end">
         <hr style=" opacity: 25%;">
-        <div ><img width="15px" height="15px" src="https://www.licious.in/img/rebranding/copyright2.png" alt=""><p>2022</p><h5>Delightful Gourmet Pvt Ltd. All Rights Reserved.</h5></div>
-        <p >DeLicious is your one-stop fresh meat delivery shop. In here, you get nothing but the freshest meat & seafood, delivered straight to your doorstep. Now you can buy meat online anytime at your convenience. Indulge in our diverse selection: Chicken, Mutton, Seafood (Fish, Prawns, Crabs), Marinades & Cold Cuts. All our products are completely natural and healthy. Once you've experienced DeLicious, you'll never go back to the old way of buying meat and seafood.</p>
-      <br>
-      </div>
-  
+        <div><img width="15px" height="15px" src="https://www.licious.in/img/rebranding/copyright2.png" alt="">
+            <p>2022</p>
+            <h5>Delightful Gourmet Pvt Ltd. All Rights Reserved.</h5>
+        </div>
+        <p>DeLicious is your one-stop fresh meat delivery shop. In here, you get nothing but the freshest meat &
+            seafood, delivered straight to your doorstep. Now you can buy meat online anytime at your convenience.
+            Indulge in our diverse selection: Chicken, Mutton, Seafood (Fish, Prawns, Crabs), Marinades & Cold Cuts. All
+            our products are completely natural and healthy. Once you've experienced DeLicious, you'll never go back to
+            the old way of buying meat and seafood.</p>
+        <br>
+    </div>
+
 
 </body>
 
 </html>
 
 <script src="A_payment.js"></script>
-
+<script src="LogIn/login.js"></script>
+<script src="Cart/cart.js"></script>
 
 
 

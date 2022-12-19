@@ -1,16 +1,17 @@
-
-let finalTotal;
+var totalPrice;
+var totalDisc;
+var finalTotal;
 
 function priceLoad() {
     console.log("in priceLoad")
     let payBox = document.getElementById("payment-detail")
 
-    let totalPrice = localStorage.getItem("total_Price")
-    let totalDisc = localStorage.getItem("total_Discount")
+    totalPrice = localStorage.getItem("total_Price")
+    totalDisc = localStorage.getItem("total_Discount")
 
     // let roundedValue = (totalPrice - totalDisc + 1) - (totalPrice - totalDisc)
 
-    finalTotal = totalPrice - totalDisc
+    finalTotal = (totalPrice - totalDisc)>=399 ? totalPrice - totalDisc : totalPrice - totalDisc+39;
 
     payBox.innerHTML = "";
 
@@ -23,7 +24,7 @@ function priceLoad() {
     <div id="pay-del-charge" class="final-pay-div">
         <span class="bill-left-span">Delivery Charge</span>
         &nbsp;&nbsp;&nbsp;
-        <span class="bill-right-span">39</span>
+        <span class="bill-right-span">${(totalPrice - totalDisc)>399 ? '0' : '39'}</span>
     </div>
     <div id="pay-discount" class="final-pay-div">
         <span class="bill-left-span">Discount</span>
@@ -65,18 +66,32 @@ payBtn.addEventListener("click", function () {
     let cardMo = document.getElementById("careMonth").value;
     let cardYear = document.getElementById("cardYear").value;
     let cardNo = document.getElementById("user-card-no").value;
+    
+    let user_info = JSON.parse(localStorage.getItem("current_user"));
+    let new_order = {};
+    new_order.user_id = user_info.id;
+    new_order.total_order = user_info.cart;
+    new_order.total_Amount = finalTotal;
 
+    ;(async ()=>{
+        await fetch("https://63982e64044fa481d693d25f.mockapi.io/total_orders",{
+            method : "POST",
+            headers : {
+                "Content-Type" : "application/json",
+            },
+            body : JSON.stringify(new_order)
+        })
+    })();
 
-    if (cardDetail.name == _Name && cardDetail.card_no == cardNo && cardDetail.cvv_no == cvvNo && cardDetail.month == cardMo && cardDetail.year == cardYear) {
+    if (cardDetail.name == _Name && cardDetail.card_no == cardNo && cardDetail.cvv_no == cvvNo && cardDetail.month == cardMo && cardDetail.year == cardYear){
         deleteApiCart();
-        window.location.href = "congratulations.html";
     } else {
         alert("Wrong Card Information")
     }
 
 
-    
-        
+
+
 })
 
 
@@ -129,7 +144,7 @@ async function deleteApiCart() {
 
 
     localStorage.setItem("current_user", JSON.stringify(currentUUser));
-
+    window.location.href = "congratulations.html";
 }
 
 

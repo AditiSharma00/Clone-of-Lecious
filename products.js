@@ -52,18 +52,31 @@ function displayProduct(data) {
     let discount_price = document.createElement("span");
     discount_price.id = "rate2";
     discount_price.innerText = "MRP: ₹" + el.price * 2;
+
     let btn = document.createElement("button");
     btn.innerText = "ADD TO CART";
     btn.id = "product_btn";
-    btn.addEventListener("click", function () {
-      data1 = el.id;
-      console.log(data1);
+    btn.addEventListener("click", addingToCartProc);
+    function addingToCartProc() {
+
+      // console.log(data1);
       let current_user =
         JSON.parse(localStorage.getItem("current_user")) || null;
       if (current_user) {
+        btn.style.backgroundColor = "white";
+        btn.style.border = "2px solid #d11243";
+        btn.style.color = "#d11243";
+        btn.innerText = "In Cart";
+        data1 = el.id;
         current_user.cart.push([data1, 1]);
         localStorage.setItem("current_user", JSON.stringify(current_user));
         addToCartFunc();
+        let alert_added = document.querySelector("#alert_added");
+        alert_added.style.marginTop = "0px";
+        setTimeout(() => {
+          alert_added.style.marginTop = "60px";
+        }, 2000);
+        btn.removeEventListener("click", addingToCartProc);
         async function addToCartFunc() {
           let a = await fetch(
             `https://63982e64044fa481d693d25f.mockapi.io/users/${current_user.id}`,
@@ -78,10 +91,11 @@ function displayProduct(data) {
         }
       } else {
         //open login section
-
+        let goTOLogInPage = document.querySelector(".goTOLogInPage");
+        goTOLogInPage.click();
         console.log("Log In First");
       }
-    });
+    };
     let div4 = document.createElement("div");
     let image1 = document.createElement("img");
     image1.setAttribute(
