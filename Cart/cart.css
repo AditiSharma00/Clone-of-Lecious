@@ -2,9 +2,15 @@ body{
     margin: 0px;
     padding: 0x;
     font-family: 'Lato', sans-serif;
-    background-color: transparent;
+    /* background-color: transparent; */
 }
-
+#cart_body {
+    margin: 0px;
+    padding: 0x;
+    font-family: 'Lato', sans-serif;
+    background-color: transparent;
+    z-index: 6000;
+}
 textarea:focus,
 input:focus {
     outline: none;
@@ -24,7 +30,7 @@ input[type=number] {
 
 #gray_cart_background {
     top: 0px;
-    z-index: 45;
+    z-index: 6000;
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -39,7 +45,7 @@ input[type=number] {
 
 #cart_sec {
     overflow-y: scroll;
-    z-index: 50;
+    z-index: 6000;
     position: absolute;
     display: flex;
     flex-direction: column;

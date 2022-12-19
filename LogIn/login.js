@@ -2,6 +2,11 @@ let gray_background_login = document.querySelector("#gray_background");
 let goTOLogInPage = document.querySelector(".goTOLogInPage");
 
 goTOLogInPage.addEventListener("click", grayOn)
+let if_user_exist = JSON.parse(localStorage.getItem("current_user")) || null;
+if(if_user_exist){
+    goTOLogInPage.innerText = "User";
+    goTOLogInPage.removeEventListener("click",grayOn);
+}
 function grayOn(){
     gray_background_login.style.display = "flex";
 }

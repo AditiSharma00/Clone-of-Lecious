@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+#cart_body {
+  margin: 0px;
+  padding: 0x;
+  font-family: 'Lato', sans-serif;
+  background-color: transparent;
+  z-index: 1000;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #F7F6F6;
 
+}
 #top-navbar {
   border: 1px rgb(224, 224, 224) solid;
   height: 20px;
@@ -43,13 +54,21 @@
   left: 0;
    position: sticky; 
    background-color: #ffffff;
-  z-index: 999;
+  z-index: 10;
  
 }
 #bottom-navbar > div {
   width: 35%;
   display: flex;
   gap: 5px;
+}
+#highToLow, #lowToHigh{
+  background-color: #ffffff;
+  color: #d11243;
+  height: 30px;
+  font-weight: 16px;
+  border: 0px;
+  border-radius: 5px;
 }
 #bottom-navbar input {
   width: 350px;
@@ -85,6 +104,7 @@
 }
 .big_container {
   background-color: #f7f6f6;
+  z-index: 10;
 }
 .main_container {
   /* border: 1px solid black; */
@@ -238,7 +258,7 @@ abbr {
   color: #4b4f54;
 }
 #sort {
-  margin-left: 40px;
+  margin-left: 0px;
   margin-bottom: 20px;
 
   display: flex;

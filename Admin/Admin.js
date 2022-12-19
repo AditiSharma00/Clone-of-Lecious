@@ -227,7 +227,7 @@ async function AllUsersSection() {
                         <span>${indi_user.id}</span>
                         <span>${indi_user.username}</span>
                         <span>${indi_user.phone_number}</span>
-                        <span>${indi_user.address[0] ? indi_user.address : "No address saved"}</span>
+                        <span>${indi_user.address["location"] ? [indi_user.address.location,indi_user.address["flat-no"],indi_user.address.landmark, indi_user.address.city, indi_user.address.phone_number].join(" ") : "No address saved"}</span>
                         <span onclick="deleteUserFunc()" data-id=${indi_user.id}>Delete</span>
                     </div>
                     <div class="user_detailed_info">

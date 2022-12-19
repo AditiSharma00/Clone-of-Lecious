@@ -1,3 +1,13 @@
+let all_cat_sec = document.querySelector("#grid-1");
+for(let i=0; i<all_cat_sec.children.length; i++){
+  let cat = all_cat_sec.children[i]
+    cat.addEventListener("click",()=>{
+      window.location.href = "products.html"
+    })
+}
+
+
+
 //collapsible js here
 
 let pasted_here = document.querySelector("#pasted_here");
